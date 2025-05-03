@@ -57,7 +57,7 @@ krish-tech/
 │   ├── about.js           # About page functionality
 │   └── faq.js             # FAQ page functionality
 └── img/
-    ├── krish-tech-logo.svg # Company logo
+    ├──logo.png # Company logo
     └── ... (other images)
 ```
 
