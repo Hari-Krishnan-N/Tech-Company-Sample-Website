@@ -3,7 +3,7 @@
 ## Overview
 KRISH TECH website is a sleek, modern, dark-themed corporate website designed for a technology company specializing in software development, IoT systems, AI/ML, and embedded solutions. The website features a responsive design with iOS-smooth animations, glass-morphism effects, and Bootstrap 5 integration.
 
-![KRISH TECH Screenshot](screenshot.png)
+![KRISH TECH Screenshot](ss1.png)
 
 ## Live Demo
 [View Demo](#) (Replace with actual demo link when deployed)
