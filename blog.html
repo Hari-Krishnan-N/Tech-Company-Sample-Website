@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KRISH TECH - Blog</title>
+    <!-- Bootstrap 5 CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/styles.css" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark-glass fixed-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="img/logo.png" alt="KRISH TECH Logo" height="30" class="me-2">
+                <span class="fw-bold text-gradient">KRISH TECH</span>
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarMain">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="blog.html">Blog</a>
+                    </li>
+                </ul>
+                <div class="ms-lg-3">
+                    <a href="login.html" class="btn btn-outline-primary btn-sm btn-glow-sm">Sign In</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header bg-dark-gradient py-5 mb-5">
+        <div class="container px-4 py-5">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb mb-3">
+                            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Blog</li>
+                        </ol>
+                    </nav>
+                    <h1 class="fw-bold mb-3">Tech <span class="text-gradient">Insights</span></h1>
+                    <p class="lead mb-0 text-white-50">Latest articles, guides, and industry perspectives from our team of experts.</p>
+                </div>
+                <div class="col-lg-6 d-none d-lg-block">
+                    <img src="img/blog.png" alt="Blog illustration" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Blog Filter Section -->
+    <section class="py-3 mb-4 bg-dark sticky-top blog-filter" style="top: 70px; z-index: 99;">
+        <div class="container px-4">
+            <div class="row">
+                <div class="col-12">
+                    <div class="d-flex flex-wrap justify-content-between align-items-center">
+                        <div class="blog-categories mb-3 mb-md-0">
+                            <div class="btn-group" role="group" aria-label="Blog Categories">
+                                <button type="button" class="btn btn-dark-glass active" data-filter="all">All</button>
+                                <button type="button" class="btn btn-dark-glass" data-filter="software">Software</button>
+                                <button type="button" class="btn btn-dark-glass" data-filter="iot">IoT</button>
+                                <button type="button" class="btn btn-dark-glass" data-filter="ai-ml">AI/ML</button>
+                                <button type="button" class="btn btn-dark-glass" data-filter="embedded">Embedded</button>
+                            </div>
+                        </div>
+                        <div class="blog-search">
+                            <div class="input-group">
+                                <input type="text" class="form-control bg-dark-subtle border-0" placeholder="Search articles..." aria-label="Search articles">
+                                <button class="btn btn-primary" type="button">
+                                    <i class="fas fa-search"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Post Section -->
+    <section class="mb-5">
+        <div class="container px-4">
+            <div class="row">
+                <div class="col-12">
+                    <div class="featured-post bg-dark-glass rounded-4 overflow-hidden">
+                        <div class="row g-0">
+                            <div class="col-lg-6">
+                                <div class="featured-img h-100">
+                                    <img src="img/featured-post.jpg" alt="Featured Post" class="img-fluid h-100 object-cover w-100">
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="featured-content p-4 p-lg-5">
+                                    <div class="post-meta mb-2">
+                                        <span class="badge bg-primary mb-2">Featured</span>
+                                        <span class="text-white-50 small me-3"><i class="far fa-calendar-alt me-1"></i> April 28, 2025</span>
+                                        <span class="text-white-50 small"><i class="far fa-user me-1"></i> Sarah Chen</span>
+                                    </div>
+                                    <h2 class="h3 fw-bold mb-3">The Future of AI in Enterprise Software: Trends to Watch in 2025</h2>
+                                    <p class="text-white-50 mb-4">Artificial intelligence is rapidly transforming how enterprises develop, deploy, and manage software solutions. From intelligent automation to predictive analytics, AI is reshaping the enterprise software landscape in profound ways.</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <a href="blog-post.html" class="btn btn-primary">Read More</a>
+                                        <div class="social-share">
+                                            <a href="#" class="text-white-50 me-2"><i class="fab fa-twitter"></i></a>
+                                            <a href="#" class="text-white-50 me-2"><i class="fab fa-linkedin-in"></i></a>
+                                            <a href="#" class="text-white-50"><i class="fab fa-facebook-f"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Posts Grid -->
+    <section class="py-5 mb-5">
+        <div class="container px-4">
+            <div class="row g-4">
+                <!-- Blog Post 1 -->
+                <div class="col-md-6 col-lg-4 blog-item" data-category="iot">
+                    <div class="blog-card h-100 bg-dark-glass rounded-4 overflow-hidden">
+                        <div class="blog-img-wrapper">
+                            <img src="img/blog-post-1.jpg" alt="Blog Post" class="img-fluid blog-img">
+                            <div class="blog-category-badge">
+                                <span class="badge bg-success">IoT</span>
+                            </div>
+                        </div>
+                        <div class="blog-content p-4">
+                            <div class="post-meta mb-2">
+                                <span class="text-white-50 small me-3"><i class="far fa-calendar-alt me-1"></i> April 22, 2025</span>
+                                <span class="text-white-50 small"><i class="far fa-user me-1"></i> Daniel Kim</span>
+                            </div>
+                            <h3 class="h5 fw-bold mb-3">Securing IoT Devices in Industrial Environments: Best Practices</h3>
+                            <p class="text-white-50 mb-3">As industrial IoT adoption accelerates, security challenges multiply. Learn how to implement robust security measures to protect your IIoT infrastructure from emerging threats.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <a href="blog-post.html" class="btn-link">Read More</a>
+                                <span class="text-white-50 small"><i class="far fa-clock me-1"></i> 7 min read</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Blog Post 2 -->
+                <div class="col-md-6 col-lg-4 blog-item" data-category="ai-ml">
+                    <div class="blog-card h-100 bg-dark-glass rounded-4 overflow-hidden">
+                        <div class="blog-img-wrapper">
+                            <img src="img/blog-post-2.jpg" alt="Blog Post" class="img-fluid blog-img">
+                            <div class="blog-category-badge">
+                                <span class="badge bg-info">AI/ML</span>
+                            </div>
+                        </div>
+                        <div class="blog-content p-4">
+                            <div class="post-meta mb-2">
+                                <span class="text-white-50 small me-3"><i class="far fa-calendar-alt me-1"></i> April 15, 2025</span>
+                                <span class="text-white-50 small"><i class="far fa-user me-1"></i> Dr. Alex Rodriguez</span>
+                            </div>
+                            <h3 class="h5 fw-bold mb-3">Explainable AI: Making Black Box Algorithms Transparent</h3>
+                            <p class="text-white-50 mb-3">As AI becomes more integrated into critical decision-making, the demand for transparency is growing. Explore techniques for making AI systems more interpretable and accountable.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <a href="blog-post.html" class="btn-link">Read More</a>
+                                <span class="text-white-50 small"><i class="far fa-clock me-1"></i> 9 min read</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Blog Post 3 -->
+                <div class="col-md-6 col-lg-4 blog-item" data-category="software">
+                    <div class="blog-card h-100 bg-dark-glass rounded-4 overflow-hidden">
+                        <div class="blog-img-wrapper">
+                            <img src="img/blog-post-3.jpg" alt="Blog Post" class="img-fluid blog-img">
+                            <div class="blog-category-badge">
+                                <span class="badge bg-primary">Software</span>
+                            </div>
+                        </div>
+                        <div class="blog-content p-4">
+                            <div class="post-meta mb-2">
+                                <span class="text-white-50 small me-3"><i class="far fa-calendar-alt me-1"></i> April 10, 2025</span>
+                                <span class="text-white-50 small"><i class="far fa-user me-1"></i> Maya Johnson</span>
+                            </div>
+                            <h3 class="h5 fw-bold mb-3">Building Resilient Microservices: Lessons from the Field</h3>
+                            <p class="text-white-50 mb-3">Microservices architectures offer flexibility but can introduce complexity. Learn practical strategies for building resilient, scalable microservices from our implementation experiences.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <a href="blog-post.html" class="btn-link">Read More</a>
+                                <span class="text-white-50 small"><i class="far fa-clock me-1"></i> 6 min read</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Blog Post 4 -->
+                <div class="col-md-6 col-lg-4 blog-item" data-category="embedded">
+                    <div class="blog-card h-100 bg-dark-glass rounded-4 overflow-hidden">
+                        <div class="blog-img-wrapper">
+                            <img src="img/blog-post-4.jpg" alt="Blog Post" class="img-fluid blog-img">
+                            <div class="blog-category-badge">
+                                <span class="badge bg-warning">Embedded</span>
+                            </div>
+                        </div>
+                        <div class="blog-content p-4">
+                            <div class="post-meta mb-2">
+                                <span class="text-white-50 small me-3"><i class="far fa-calendar-alt me-1"></i> April 5, 2025</span>
+                                <span class="text-white-50 small"><i class="far fa-user me-1"></i> Priya Patel</span>
+                            </div>
+                            <h3 class="h5 fw-bold mb-3">Low-Power Design Techniques for Embedded Wearable Devices</h3>
+                            <p class="text-white-50 mb-3">Battery life remains a critical constraint for wearable technology. Discover innovative low-power design approaches that maximize battery efficiency without compromising performance.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <a href="blog-post.html" class="btn-link">Read More</a>
+                                <span class="text-white-50 small"><i class="far fa-clock me-1"></i> 8 min read</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Blog Post 5 -->
+                <div class="col-md-6 col-lg-4 blog-item" data-category="ai-ml">
+                    <div class="blog-card h-100 bg-dark-glass rounded-4 overflow-hidden">
+                        <div class="blog-img-wrapper">
+                            <img src="img/blog-post-5.jpg" alt="Blog Post" class="img-fluid blog-img">
+                            <div class="blog-category-badge">
+                                <span class="badge bg-info">AI/ML</span>
+                            </div>
+                        </div>
+                        <div class="blog-content p-4">
+                            <div class="post-meta mb-2">
+                                <span class="text-white-50 small me-3"><i class="far fa-calendar-alt me-1"></i> March 28, 2025</span>
+                                <span class="text-white-50 small"><i class="far fa-user me-1"></i> Dr. Alex Rodriguez</span>
+                            </div>
+                            <h3 class="h5 fw-bold mb-3">Federated Learning: AI Model Training While Preserving Privacy</h3>
+                            <p class="text-white-50 mb-3">Federated learning enables AI model training across distributed devices without sharing sensitive data. Learn how this approach is revolutionizing privacy-preserving machine learning.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <a href="blog-post.html" class="btn-link">Read More</a>
+                                <span class="text-white-50 small"><i class="far fa-clock me-1"></i> 10 min read</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Blog Post 6 -->
+                <div class="col-md-6 col-lg-4 blog-item" data-category="iot">
+                    <div class="blog-card h-100 bg-dark-glass rounded-4 overflow-hidden">
+                        <div class="blog-img-wrapper">
+                            <img src="img/blog-post-6.jpg" alt="Blog Post" class="img-fluid blog-img">
+                            <div class="blog-category-badge">
+                                <span class="badge bg-success">IoT</span>
+                            </div>
+                        </div>
+                        <div class="blog-content p-4">
+                            <div class="post-meta mb-2">
+                                <span class="text-white-50 small me-3"><i class="far fa-calendar-alt me-1"></i> March 20, 2025</span>
+                                <span class="text-white-50 small"><i class="far fa-user me-1"></i> Daniel Kim</span>
+                            </div>
+                            <h3 class="h5 fw-bold mb-3">Edge Computing for IoT: Reducing Latency and Bandwidth Costs</h3>
+                            <p class="text-white-50 mb-3">Moving computation closer to data sources is transforming IoT architectures. Explore how edge computing addresses key IoT challenges including latency, bandwidth, and reliability.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <a href="blog-post.html" class="btn-link">Read More</a>
+                                <span class="text-white-50 small"><i class="far fa-clock me-1"></i> 7 min read</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Blog Post 7 -->
+                <div class="col-md-6 col-lg-4 blog-item" data-category="software">
+                    <div class="blog-card h-100 bg-dark-glass rounded-4 overflow-hidden">
+                        <div class="blog-img-wrapper">
+                            <img src="img/blog-post-7.jpg" alt="Blog Post" class="img-fluid blog-img">
+                            <div class="blog-category-badge">
+                                <span class="badge bg-primary">Software</span>
+                            </div>
+                        </div>
+                        <div class="blog-content p-4">
+                            <div class="post-meta mb-2">
+                                <span class="text-white-50 small me-3"><i class="far fa-calendar-alt me-1"></i> March 15, 2025</span>
+                                <span class="text-white-50 small"><i class="far fa-user me-1"></i> Sarah Chen</span>
+                            </div>
+                            <h3 class="h5 fw-bold mb-3">API-First Development: Building Products for the API Economy</h3>
+                            <p class="text-white-50 mb-3">In today's interconnected digital ecosystem, APIs are becoming the primary product. Learn the principles of API-first development and how it can accelerate your digital transformation.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <a href="blog-post.html" class="btn-link">Read More</a>
+                                <span class="text-white-50 small"><i class="far fa-clock me-1"></i> 8 min read</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Blog Post 8 -->
+                <div class="col-md-6 col-lg-4 blog-item" data-category="embedded">
+                    <div class="blog-card h-100 bg-dark-glass rounded-4 overflow-hidden">
+                        <div class="blog-img-wrapper">
+                            <img src="img/blog-post-8.jpg" alt="Blog Post" class="img-fluid blog-img">
+                            <div class="blog-category-badge">
+                                <span class="badge bg-warning">Embedded</span>
+                            </div>
+                        </div>
+                        <div class="blog-content p-4">
+                            <div class="post-meta mb-2">
+                                <span class="text-white-50 small me-3"><i class="far fa-calendar-alt me-1"></i> March 8, 2025</span>
+                                <span class="text-white-50 small"><i class="far fa-user me-1"></i> Priya Patel</span>
+                            </div>
+                            <h3 class="h5 fw-bold mb-3">Real-Time Operating Systems: Choosing the Right RTOS for Your Project</h3>
+                            <p class="text-white-50 mb-3">Selecting the appropriate RTOS is crucial for embedded systems with real-time constraints. Compare leading RTOS options and learn how to evaluate them for your specific requirements.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <a href="blog-post.html" class="btn-link">Read More</a>
+                                <span class="text-white-50 small"><i class="far fa-clock me-1"></i> 9 min read</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Blog Post 9 -->
+                <div class="col-md-6 col-lg-4 blog-item" data-category="software">
+                    <div class="blog-card h-100 bg-dark-glass rounded-4 overflow-hidden">
+                        <div class="blog-img-wrapper">
+                            <img src="img/blog-post-9.jpg" alt="Blog Post" class="img-fluid blog-img">
+                            <div class="blog-category-badge">
+                                <span class="badge bg-primary">Software</span>
+                            </div>
+                        </div>
+                        <div class="blog-content p-4">
+                            <div class="post-meta mb-2">
+                                <span class="text-white-50 small me-3"><i class="far fa-calendar-alt me-1"></i> March 1, 2025</span>
+                                <span class="text-white-50 small"><i class="far fa-user me-1"></i> Maya Johnson</span>
+                            </div>
+                            <h3 class="h5 fw-bold mb-3">DevSecOps: Integrating Security into the Development Lifecycle</h3>
+                            <p class="text-white-50 mb-3">Security can no longer be an afterthought in software development. Discover practical approaches to embedding security throughout the development pipeline without sacrificing agility.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <a href="blog-post.html" class="btn-link">Read More</a>
+                                <span class="text-white-50 small"><i class="far fa-clock me-1"></i> 7 min read</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Load More Button -->
+            <div class="text-center mt-5">
+                <button id="loadMoreBtn" class="btn btn-outline-primary btn-lg">Load More Articles</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="py-5 bg-dark-deep mb-5">
+        <div class="container px-4">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h2 class="fw-bold mb-3">Subscribe to Our <span class="text-gradient">Newsletter</span></h2>
+                    <p class="lead text-white-50 mb-4">Stay updated with the latest tech insights, industry trends, and KRISH TECH news delivered directly to your inbox.</p>
+                    <form class="newsletter-form">
+                        <div class="row g-2">
+                            <div class="col-md-8">
+                                <div class="form-floating">
+                                    <input type="email" class="form-control bg-dark-subtle border-0" id="newsletterEmail" placeholder="Your email address" required>
+                                    <label for="newsletterEmail">Your email address</label>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <button type="submit" class="btn btn-primary w-100 h-100">Subscribe</button>
+                            </div>
+                        </div>
+                        <div class="form-check mt-3">
+                            <input class="form-check-input" type="checkbox" id="privacyCheck" required>
+                            <label class="form-check-label text-white-50" for="privacyCheck">
+                                I agree to the <a href="#" data-bs-toggle="modal" data-bs-target="#privacyModal">privacy policy</a> and consent to receiving the newsletter.
+                            </label>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Tags Section -->
+    <section class="py-5 mb-5">
+        <div class="container px-4">
+            <div class="row justify-content-center text-center mb-4">
+                <div class="col-lg-8">
+                    <h2 class="fw-bold mb-3">Popular <span class="text-gradient">Tags</span></h2>
+                    <p class="lead text-white-50">Browse articles by topic to find exactly what you're looking for.</p>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="tags-cloud text-center">
+                        <a href="#" class="tag-item bg-dark-glass">Machine Learning</a>
+                        <a href="#" class="tag-item bg-dark-glass">IoT Security</a>
+                        <a href="#" class="tag-item bg-dark-glass">Cloud Computing</a>
+                        <a href="#" class="tag-item bg-dark-glass">Microservices</a>
+                        <a href="#" class="tag-item bg-dark-glass">Edge Computing</a>
+                        <a href="#" class="tag-item bg-dark-glass">Artificial Intelligence</a>
+                        <a href="#" class="tag-item bg-dark-glass">RTOS</a>
+                        <a href="#" class="tag-item bg-dark-glass">DevOps</a>
+                        <a href="#" class="tag-item bg-dark-glass">Python</a>
+                        <a href="#" class="tag-item bg-dark-glass">React</a>
+                        <a href="#" class="tag-item bg-dark-glass">Smart Cities</a>
+                        <a href="#" class="tag-item bg-dark-glass">Kubernetes</a>
+                        <a href="#" class="tag-item bg-dark-glass">Blockchain</a>
+                        <a href="#" class="tag-item bg-dark-glass">Neural Networks</a>
+                        <a href="#" class="tag-item bg-dark-glass">Low-Power Design</a>
+                        <a href="#" class="tag-item bg-dark-glass">API Design</a>
+                        <a href="#" class="tag-item bg-dark-glass">Cybersecurity</a>
+                        <a href="#" class="tag-item bg-dark-glass">Data Science</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-5 py-lg-6 bg-primary bg-gradient text-white position-relative">
+        <div class="container px-4">
+            <div class="row justify-content-center text-center">
+                <div class="col-lg-8">
+                    <h2 class="fw-bold mb-4">Have a Topic You'd Like Us to Cover?</h2>
+                    <p class="lead mb-4">We're always looking for new ideas and perspectives. Let us know what you'd like to read about next.</p>
+                    <button class="btn btn-light btn-lg px-5 py-3" data-bs-toggle="modal" data-bs-target="#topicSuggestionModal">Suggest a Topic</button>
+                </div>
+            </div>
+        </div>
+        <div class="cta-shapes"></div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-5 bg-dark border-top border-dark">
+        <div class="container px-4">
+            <div class="row gy-4">
+                <div class="col-lg-4 col-md-6">
+                    <a class="d-inline-flex align-items-center mb-3" href="index.html">
+                        <img src="img/logo.png" alt="KRISH TECH Logo" height="30" class="me-2">
+                        <span class="fw-bold text-gradient">KRISH TECH</span>
+                    </a>
+                    <p class="text-white-50 mb-4">Pioneering tomorrow's technology solutions to solve today's business challenges.</p>
+                    <div class="social-links">
+                        <a href="#" class="me-2 btn btn-sm btn-dark-glass"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="me-2 btn btn-sm btn-dark-glass"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="me-2 btn btn-sm btn-dark-glass"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="btn btn-sm btn-dark-glass"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="text-white mb-3">Quick Links</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="text-white mb-3">Services</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="services.html#software">Software Development</a></li>
+                        <li><a href="services.html#iot">IoT Systems</a></li>
+                        <li><a href="services.html#ai-ml">AI & Machine Learning</a></li>
+                        <li><a href="services.html#embedded">Embedded Solutions</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <h5 class="text-white mb-3">Stay Updated</h5>
+                    <p class="text-white-50 mb-3">Subscribe to our newsletter for the latest tech insights and company news.</p>
+                    <form class="mb-3">
+                        <div class="input-group">
+                            <input type="email" class="form-control bg-dark-subtle border-0" placeholder="Your email address" aria-label="Your email address">
+                            <button class="btn btn-primary" type="submit">Subscribe</button>
+                        </div>
+                    </form>
+                    <p class="text-white-50 small">© 2025 KRISH TECH. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Privacy Policy Modal -->
+    <div class="modal fade" id="privacyModal" tabindex="-1" aria-labelledby="privacyModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content bg-dark-glass border-0">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title" id="privacyModalLabel">Privacy Policy</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h4 class="h5 mb-3">Information Collection and Use</h4>
+                    <p class="text-white-50">We collect personal information such as your email address when you subscribe to our newsletter. This information is used solely to send you the requested content and occasional updates about our services and industry insights.</p>
+                    
+                    <h4 class="h5 mb-3 mt-4">Data Protection</h4>
+                    <p class="text-white-50">We implement appropriate security measures to protect your personal information against unauthorized access, alteration, disclosure, or destruction. Your data is stored securely and only accessed by authorized personnel who require it to perform their duties.</p>
+                    
+                    <h4 class="h5 mb-3 mt-4">Communication</h4>
+                    <p class="text-white-50">By providing your email address and consent, you agree to receive our newsletter and related communications. You may opt out of these communications at any time by clicking the "unsubscribe" link included in each newsletter.</p>
+                    
+                    <h4 class="h5 mb-3 mt-4">Third-Party Disclosure</h4>
+                    <p class="text-white-50">We do not sell, trade, or transfer your personal information to third parties without your consent, except for trusted partners who assist us in operating our website or servicing you, provided they agree to keep this information confidential.</p>
+                </div>
+                <div class="modal-footer border-0">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Topic Suggestion Modal -->
+    <div class="modal fade" id="topicSuggestionModal" tabindex="-1" aria-labelledby="topicSuggestionModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content bg-dark-glass border-0">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title" id="topicSuggestionModalLabel">Suggest a Topic</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="topicSuggestionForm">
+                        <!-- Name Field -->
+                        <div class="mb-3">
+                            <div class="form-floating">
+                                <input type="text" class="form-control bg-dark-subtle border-0" id="suggesterName" placeholder="Your Name" required>
+                                <label for="suggesterName">Your Name</label>
+                            </div>
+                        </div>
+                        
+                        <!-- Email Field -->
+                        <div class="mb-3">
+                            <div class="form-floating">
+                                <input type="email" class="form-control bg-dark-subtle border-0" id="suggesterEmail" placeholder="Your Email" required>
+                                <label for="suggesterEmail">Your Email</label>
+                            </div>
+                        </div>
+                        
+                        <!-- Topic Category -->
+                        <div class="mb-3">
+                            <div class="form-floating">
+                                <select class="form-select bg-dark-subtle border-0" id="topicCategory" required>
+                                    <option value="" selected disabled>Select a category</option>
+                                    <option value="software">Software Development</option>
+                                    <option value="iot">IoT Systems</option>
+                                    <option value="ai-ml">AI & Machine Learning</option>
+                                    <option value="embedded">Embedded Systems</option>
+                                    <option value="other">Other</option>
+                                </select>
+                                <label for="topicCategory">Topic Category</label>
+                            </div>
+                        </div>
+                        
+                        <!-- Topic Suggestion -->
+                        <div class="mb-3">
+                            <div class="form-floating">
+                                <textarea class="form-control bg-dark-subtle border-0" id="topicSuggestion" placeholder="Your Topic Suggestion" style="height: 120px" required></textarea>
+                                <label for="topicSuggestion">Topic Suggestion</label>
+                            </div>
+                        </div>
+                        
+                        <!-- Submit Button -->
+                        <button type="submit" class="btn btn-primary w-100">
+                            Submit Suggestion
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="btn btn-primary rounded-circle back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Bootstrap 5 JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+    <script src="js/blog.js"></script>
+
+</body>
+</html>

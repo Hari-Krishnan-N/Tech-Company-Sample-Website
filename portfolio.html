@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KRISH TECH - Portfolio</title>
+    <!-- Bootstrap 5 CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/styles.css" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark-glass fixed-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="img/logo.png" alt="KRISH TECH Logo" height="30" class="me-2">
+                <span class="fw-bold text-gradient">KRISH TECH</span>
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarMain">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                </ul>
+                <div class="ms-lg-3">
+                    <a href="login.html" class="btn btn-outline-primary btn-sm btn-glow-sm">Sign In</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header bg-dark-gradient py-5 mb-5">
+        <div class="container px-4 py-5">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb mb-3">
+                            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Portfolio</li>
+                        </ol>
+                    </nav>
+                    <h1 class="fw-bold mb-3">Our <span class="text-gradient">Projects</span></h1>
+                    <p class="lead mb-0 text-white-50">Explore our innovative solutions and success stories across industries.</p>
+                </div>
+                <div class="col-lg-6 d-none d-lg-block">
+                    <img src="img/port_head.png" alt="Portfolio illustration" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Portfolio Filter Section -->
+    <section class="py-3 mb-4 bg-dark sticky-top portfolio-filter" style="top: 70px; z-index: 99;">
+        <div class="container px-4">
+            <div class="d-flex flex-wrap justify-content-between align-items-center">
+                <div class="portfolio-categories mb-3 mb-md-0">
+                    <div class="btn-group" role="group" aria-label="Portfolio Categories">
+                        <button type="button" class="btn btn-dark-glass active" data-filter="all">All</button>
+                        <button type="button" class="btn btn-dark-glass" data-filter="software">Software</button>
+                        <button type="button" class="btn btn-dark-glass" data-filter="iot">IoT</button>
+                        <button type="button" class="btn btn-dark-glass" data-filter="ai-ml">AI/ML</button>
+                        <button type="button" class="btn btn-dark-glass" data-filter="embedded">Embedded</button>
+                    </div>
+                </div>
+                <div class="portfolio-view-options">
+                    <div class="btn-group" role="group" aria-label="View Options">
+                        <button type="button" class="btn btn-dark-glass active" id="gridViewBtn">
+                            <i class="fas fa-th"></i>
+                        </button>
+                        <button type="button" class="btn btn-dark-glass" id="listViewBtn">
+                            <i class="fas fa-list"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Grid -->
+    <section class="py-5 mb-5">
+        <div class="container px-4">
+            <div class="row g-4" id="portfolioGrid">
+                <!-- Project 1 -->
+                <div class="col-md-6 col-lg-4 portfolio-item" data-category="ai-ml">
+                    <div class="portfolio-card bg-dark-glass rounded-4 overflow-hidden h-100">
+                        <div class="portfolio-img-wrapper">
+                            <img src="img/ai1.png" alt="Project" class="img-fluid portfolio-img">
+                            <div class="portfolio-overlay d-flex align-items-center justify-content-center">
+                                <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#project1Modal">
+                                    View Details
+                                </a>
+                            </div>
+                        </div>
+                        <div class="portfolio-content p-4">
+                            <div class="portfolio-category mb-2">
+                                <span class="badge bg-info">AI/ML</span>
+                            </div>
+                            <h3 class="h5 fw-bold mb-3">Predictive Maintenance System for Manufacturing</h3>
+                            <p class="text-white-50 mb-3">AI-powered system that predicts equipment failures before they occur, reducing downtime and maintenance costs for a global manufacturing client.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="tech-stack">
+                                    <span class="badge bg-dark-subtle text-white-50 me-1">TensorFlow</span>
+                                    <span class="badge bg-dark-subtle text-white-50 me-1">Python</span>
+                                    <span class="badge bg-dark-subtle text-white-50">IoT Sensors</span>
+                                </div>
+                                <a href="#" class="btn-link" data-bs-toggle="modal" data-bs-target="#project1Modal">
+                                    <i class="fas fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="col-md-6 col-lg-4 portfolio-item" data-category="iot">
+                    <div class="portfolio-card bg-dark-glass rounded-4 overflow-hidden h-100">
+                        <div class="portfolio-img-wrapper">
+                            <img src="img/iot.png" alt="Project" class="img-fluid portfolio-img">
+                            <div class="portfolio-overlay d-flex align-items-center justify-content-center">
+                                <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#project2Modal">
+                                    View Details
+                                </a>
+                            </div>
+                        </div>
+                        <div class="portfolio-content p-4">
+                            <div class="portfolio-category mb-2">
+                                <span class="badge bg-success">IoT</span>
+                            </div>
+                            <h3 class="h5 fw-bold mb-3">Smart City Traffic Management Platform</h3>
+                            <p class="text-white-50 mb-3">Integrated IoT platform that optimizes traffic flow, reduces congestion, and improves emergency response times across urban environments.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="tech-stack">
+                                    <span class="badge bg-dark-subtle text-white-50 me-1">MQTT</span>
+                                    <span class="badge bg-dark-subtle text-white-50 me-1">Edge Computing</span>
+                                    <span class="badge bg-dark-subtle text-white-50">React</span>
+                                </div>
+                                <a href="#" class="btn-link" data-bs-toggle="modal" data-bs-target="#project2Modal">
+                                    <i class="fas fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 3 -->
+                <div class="col-md-6 col-lg-4 portfolio-item" data-category="software">
+                    <div class="portfolio-card bg-dark-glass rounded-4 overflow-hidden h-100">
+                        <div class="portfolio-img-wrapper">
+                            <img src="img/bc.png" alt="Project" class="img-fluid portfolio-img">
+                            <div class="portfolio-overlay d-flex align-items-center justify-content-center">
+                                <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#project3Modal">
+                                    View Details
+                                </a>
+                            </div>
+                        </div>
+                        <div class="portfolio-content p-4">
+                            <div class="portfolio-category mb-2">
+                                <span class="badge bg-primary">Software</span>
+                            </div>
+                            <h3 class="h5 fw-bold mb-3">Blockchain-Based Supply Chain Tracking System</h3>
+                            <p class="text-white-50 mb-3">Transparent and secure platform for tracking products from origin to consumer, ensuring authenticity and compliance throughout the supply chain.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="tech-stack">
+                                    <span class="badge bg-dark-subtle text-white-50 me-1">Ethereum</span>
+                                    <span class="badge bg-dark-subtle text-white-50 me-1">Smart Contracts</span>
+                                    <span class="badge bg-dark-subtle text-white-50">Node.js</span>
+                                </div>
+                                <a href="#" class="btn-link" data-bs-toggle="modal" data-bs-target="#project3Modal">
+                                    <i class="fas fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 4 -->
+                <div class="col-md-6 col-lg-4 portfolio-item" data-category="embedded">
+                    <div class="portfolio-card bg-dark-glass rounded-4 overflow-hidden h-100">
+                        <div class="portfolio-img-wrapper">
+                            <img src="img/device.png" alt="Project" class="img-fluid portfolio-img">
+                            <div class="portfolio-overlay d-flex align-items-center justify-content-center">
+                                <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#project4Modal">
+                                    View Details
+                                </a>
+                            </div>
+                        </div>
+                        <div class="portfolio-content p-4">
+                            <div class="portfolio-category mb-2">
+                                <span class="badge bg-warning">Embedded</span>
+                            </div>
+                            <h3 class="h5 fw-bold mb-3">Medical Wearable Device for Remote Patient Monitoring</h3>
+                            <p class="text-white-50 mb-3">Low-power wearable device with integrated sensors for continuous health monitoring, enabling early intervention and improved patient outcomes.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="tech-stack">
+                                    <span class="badge bg-dark-subtle text-white-50 me-1">RTOS</span>
+                                    <span class="badge bg-dark-subtle text-white-50 me-1">Bluetooth LE</span>
+                                    <span class="badge bg-dark-subtle text-white-50">Embedded C</span>
+                                </div>
+                                <a href="#" class="btn-link" data-bs-toggle="modal" data-bs-target="#project4Modal">
+                                    <i class="fas fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 5 -->
+                <div class="col-md-6 col-lg-4 portfolio-item" data-category="ai-ml">
+                    <div class="portfolio-card bg-dark-glass rounded-4 overflow-hidden h-100">
+                        <div class="portfolio-img-wrapper">
+                            <img src="img/ai2.png" alt="Project" class="img-fluid portfolio-img">
+                            <div class="portfolio-overlay d-flex align-items-center justify-content-center">
+                                <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#project5Modal">
+                                    View Details
+                                </a>
+                            </div>
+                        </div>
+                        <div class="portfolio-content p-4">
+                            <div class="portfolio-category mb-2">
+                                <span class="badge bg-info">AI/ML</span>
+                            </div>
+                            <h3 class="h5 fw-bold mb-3">Computer Vision System for Quality Control</h3>
+                            <p class="text-white-50 mb-3">AI-powered visual inspection system that identifies defects in manufacturing with higher accuracy and speed than traditional methods.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="tech-stack">
+                                    <span class="badge bg-dark-subtle text-white-50 me-1">OpenCV</span>
+                                    <span class="badge bg-dark-subtle text-white-50 me-1">PyTorch</span>
+                                    <span class="badge bg-dark-subtle text-white-50">CUDA</span>
+                                </div>
+                                <a href="#" class="btn-link" data-bs-toggle="modal" data-bs-target="#project5Modal">
+                                    <i class="fas fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 6 -->
+                <div class="col-md-6 col-lg-4 portfolio-item" data-category="software">
+                    <div class="portfolio-card bg-dark-glass rounded-4 overflow-hidden h-100">
+                        <div class="portfolio-img-wrapper">
+                            <img src="img/finance.png" alt="Project" class="img-fluid portfolio-img">
+                            <div class="portfolio-overlay d-flex align-items-center justify-content-center">
+                                <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#project6Modal">
+                                    View Details
+                                </a>
+                            </div>
+                        </div>
+                        <div class="portfolio-content p-4">
+                            <div class="portfolio-category mb-2">
+                                <span class="badge bg-primary">Software</span>
+                            </div>
+                            <h3 class="h5 fw-bold mb-3">Microservices-Based Financial Trading Platform</h3>
+                            <p class="text-white-50 mb-3">High-performance trading platform with real-time data processing, low latency execution, and comprehensive risk management capabilities.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="tech-stack">
+                                    <span class="badge bg-dark-subtle text-white-50 me-1">Kubernetes</span>
+                                    <span class="badge bg-dark-subtle text-white-50 me-1">Spring Boot</span>
+                                    <span class="badge bg-dark-subtle text-white-50">Kafka</span>
+                                </div>
+                                <a href="#" class="btn-link" data-bs-toggle="modal" data-bs-target="#project6Modal">
+                                    <i class="fas fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 7 -->
+                <div class="col-md-6 col-lg-4 portfolio-item" data-category="iot">
+                    <div class="portfolio-card bg-dark-glass rounded-4 overflow-hidden h-100">
+                        <div class="portfolio-img-wrapper">
+                            <img src="img/agri.png" alt="Project" class="img-fluid portfolio-img">
+                            <div class="portfolio-overlay d-flex align-items-center justify-content-center">
+                                <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#project7Modal">
+                                    View Details
+                                </a>
+                            </div>
+                        </div>
+                        <div class="portfolio-content p-4">
+                            <div class="portfolio-category mb-2">
+                                <span class="badge bg-success">IoT</span>
+                            </div>
+                            <h3 class="h5 fw-bold mb-3">Smart Agriculture Monitoring System</h3>
+                            <p class="text-white-50 mb-3">IoT-based solution for optimizing agricultural production through real-time monitoring of soil conditions, weather, and crop health.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="tech-stack">
+                                    <span class="badge bg-dark-subtle text-white-50 me-1">LoRaWAN</span>
+                                    <span class="badge bg-dark-subtle text-white-50 me-1">AWS IoT</span>
+                                    <span class="badge bg-dark-subtle text-white-50">Time Series DB</span>
+                                </div>
+                                <a href="#" class="btn-link" data-bs-toggle="modal" data-bs-target="#project7Modal">
+                                    <i class="fas fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 8 -->
+                <div class="col-md-6 col-lg-4 portfolio-item" data-category="embedded">
+                    <div class="portfolio-card bg-dark-glass rounded-4 overflow-hidden h-100">
+                        <div class="portfolio-img-wrapper">
+                            <img src="img/drone.png" alt="Project" class="img-fluid portfolio-img">
+                            <div class="portfolio-overlay d-flex align-items-center justify-content-center">
+                                <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#project8Modal">
+                                    View Details
+                                </a>
+                            </div>
+                        </div>
+                        <div class="portfolio-content p-4">
+                            <div class="portfolio-category mb-2">
+                                <span class="badge bg-warning">Embedded</span>
+                            </div>
+                            <h3 class="h5 fw-bold mb-3">Autonomous Drone Navigation System</h3>
+                            <p class="text-white-50 mb-3">Embedded system enabling autonomous navigation, obstacle avoidance, and mission execution for industrial and commercial drone applications.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="tech-stack">
+                                    <span class="badge bg-dark-subtle text-white-50 me-1">Computer Vision</span>
+                                    <span class="badge bg-dark-subtle text-white-50 me-1">Embedded Linux</span>
+                                    <span class="badge bg-dark-subtle text-white-50">C++</span>
+                                </div>
+                                <a href="#" class="btn-link" data-bs-toggle="modal" data-bs-target="#project8Modal">
+                                    <i class="fas fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 9 -->
+                <div class="col-md-6 col-lg-4 portfolio-item" data-category="ai-ml">
+                    <div class="portfolio-card bg-dark-glass rounded-4 overflow-hidden h-100">
+                        <div class="portfolio-img-wrapper">
+                            <img src="img/nlp.png" alt="Project" class="img-fluid portfolio-img">
+                            <div class="portfolio-overlay d-flex align-items-center justify-content-center">
+                                <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#project9Modal">
+                                    View Details
+                                </a>
+                            </div>
+                        </div>
+                        <div class="portfolio-content p-4">
+                            <div class="portfolio-category mb-2">
+                                <span class="badge bg-info">AI/ML</span>
+                            </div>
+                            <h3 class="h5 fw-bold mb-3">Natural Language Processing for Customer Service</h3>
+                            <p class="text-white-50 mb-3">AI-powered conversational platform that understands customer inquiries and provides personalized responses across multiple languages and channels.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="tech-stack">
+                                    <span class="badge bg-dark-subtle text-white-50 me-1">NLP</span>
+                                    <span class="badge bg-dark-subtle text-white-50 me-1">BERT</span>
+                                    <span class="badge bg-dark-subtle text-white-50">FastAPI</span>
+                                </div>
+                                <a href="#" class="btn-link" data-bs-toggle="modal" data-bs-target="#project9Modal">
+                                    <i class="fas fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Client Success Stories -->
+    <section class="py-5 mb-5 bg-dark-deep">
+        <div class="container px-4">
+            <div class="row justify-content-center text-center mb-5">
+                <div class="col-lg-8">
+                    <h2 class="fw-bold mb-3">Client Success <span class="text-gradient">Stories</span></h2>
+                    <p class="lead text-white-50">Real-world impact and measurable results from our technology solutions.</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <!-- Success Story 1 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="success-story-card bg-dark-glass rounded-4 h-100">
+                        <div class="card-body p-4">
+                            <div class="client-logo mb-3">
+                                <img src="img/company1.png" alt="Client Logo" class="img-fluid" width="120">
+                            </div>
+                            <h3 class="h5 fw-bold mb-3">Global Manufacturing Company</h3>
+                            <div class="results mb-3">
+                                <div class="result-item d-flex align-items-center mb-2">
+                                    <div class="result-icon text-success me-2">
+                                        <i class="fas fa-chart-line"></i>
+                                    </div>
+                                    <div class="result-text">
+                                        <strong>42%</strong> reduction in equipment downtime
+                                    </div>
+                                </div>
+                                <div class="result-item d-flex align-items-center mb-2">
+                                    <div class="result-icon text-success me-2">
+                                        <i class="fas fa-dollar-sign"></i>
+                                    </div>
+                                    <div class="result-text">
+                                        <strong>$2.7M</strong> annual maintenance cost savings
+                                    </div>
+                                </div>
+                                <div class="result-item d-flex align-items-center">
+                                    <div class="result-icon text-success me-2">
+                                        <i class="fas fa-calendar-check"></i>
+                                    </div>
+                                    <div class="result-text">
+                                        <strong>8 month</strong> ROI period
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="text-white-50 mb-0">"The predictive maintenance system has transformed our operations, significantly reducing downtime and maintenance costs while extending equipment life."</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Success Story 2 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="success-story-card bg-dark-glass rounded-4 h-100">
+                        <div class="card-body p-4">
+                            <div class="client-logo mb-3">
+                                <img src="img/company2.png" alt="Client Logo" class="img-fluid" width="120">
+                            </div>
+                            <h3 class="h5 fw-bold mb-3">Metropolitan Transit Authority</h3>
+                            <div class="results mb-3">
+                                <div class="result-item d-flex align-items-center mb-2">
+                                    <div class="result-icon text-success me-2">
+                                        <i class="fas fa-clock"></i>
+                                    </div>
+                                    <div class="result-text">
+                                        <strong>37%</strong> reduction in average commute time
+                                    </div>
+                                </div>
+                                <div class="result-item d-flex align-items-center mb-2">
+                                    <div class="result-icon text-success me-2">
+                                        <i class="fas fa-gas-pump"></i>
+                                    </div>
+                                    <div class="result-text">
+                                        <strong>28%</strong> decrease in fuel consumption
+                                    </div>
+                                </div>
+                                <div class="result-item d-flex align-items-center">
+                                    <div class="result-icon text-success me-2">
+                                        <i class="fas fa-smog"></i>
+                                    </div>
+                                    <div class="result-text">
+                                        <strong>32%</strong> reduction in carbon emissions
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="text-white-50 mb-0">"The smart traffic management system has revolutionized our city's transportation, reducing congestion and emissions while improving the overall quality of life."</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Success Story 3 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="success-story-card bg-dark-glass rounded-4 h-100">
+                        <div class="card-body p-4">
+                            <div class="client-logo mb-3">
+                                <img src="img/company3.png" alt="Client Logo" class="img-fluid" width="120">
+                            </div>
+                            <h3 class="h5 fw-bold mb-3">Regional Healthcare Network</h3>
+                            <div class="results mb-3">
+                                <div class="result-item d-flex align-items-center mb-2">
+                                    <div class="result-icon text-success me-2">
+                                        <i class="fas fa-heartbeat"></i>
+                                    </div>
+                                    <div class="result-text">
+                                        <strong>52%</strong> increase in early intervention cases
+                                    </div>
+                                </div>
+                                <div class="result-item d-flex align-items-center mb-2">
+                                    <div class="result-icon text-success me-2">
+                                        <i class="fas fa-hospital"></i>
+                                    </div>
+                                    <div class="result-text">
+                                        <strong>34%</strong> reduction in hospital readmissions
+                                    </div>
+                                </div>
+                                <div class="result-item d-flex align-items-center">
+                                    <div class="result-icon text-success me-2">
+                                        <i class="fas fa-user-md"></i>
+                                    </div>
+                                    <div class="result-text">
+                                        <strong>45%</strong> improvement in patient satisfaction
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="text-white-50 mb-0">"The remote patient monitoring system has enabled us to provide proactive care, significantly improving patient outcomes while reducing healthcare costs."</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Approach Section -->
+    <section class="py-5 mb-5">
+        <div class="container px-4">
+            <div class="row justify-content-center text-center mb-5">
+                <div class="col-lg-8">
+                    <h2 class="fw-bold mb-3">Our <span class="text-gradient">Approach</span></h2>
+                    <p class="lead text-white-50">How we deliver exceptional results for our clients.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="approach-timeline">
+                        <!-- Approach Step 1 -->
+                        <div class="approach-step">
+                            <div class="approach-number bg-primary">01</div>
+                            <div class="approach-content bg-dark-glass p-4 rounded-4">
+                                <h3 class="h5 fw-bold mb-3">Discovery & Analysis</h3>
+                                <p class="text-white-50 mb-0">We begin by thoroughly understanding your business challenges, goals, and requirements. Our team works closely with your stakeholders to identify opportunities where technology can create the most significant impact.</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Approach Step 2 -->
+                        <div class="approach-step">
+                            <div class="approach-number bg-primary">02</div>
+                            <div class="approach-content bg-dark-glass p-4 rounded-4">
+                                <h3 class="h5 fw-bold mb-3">Strategy & Solution Design</h3>
+                                <p class="text-white-50 mb-0">Based on our analysis, we design a comprehensive solution strategy that aligns with your business objectives. This includes technology selection, architecture design, and a detailed implementation roadmap.</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Approach Step 3 -->
+                        <div class="approach-step">
+                            <div class="approach-number bg-primary">03</div>
+                            <div class="approach-content bg-dark-glass p-4 rounded-4">
+                                <h3 class="h5 fw-bold mb-3">Agile Development & Implementation</h3>
+                                <p class="text-white-50 mb-0">Using agile methodologies, we develop your solution with regular sprints, continuous feedback, and iterative improvements. This approach ensures flexibility, transparency, and alignment with your evolving needs.</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Approach Step 4 -->
+                        <div class="approach-step">
+                            <div class="approach-number bg-primary">04</div>
+                            <div class="approach-content bg-dark-glass p-4 rounded-4">
+                                <h3 class="h5 fw-bold mb-3">Testing & Quality Assurance</h3>
+                                <p class="text-white-50 mb-0">We conduct rigorous testing at every stage of the development process, ensuring the solution meets the highest standards of quality, security, and performance before deployment.</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Approach Step 5 -->
+                        <div class="approach-step">
+                            <div class="approach-number bg-primary">05</div>
+                            <div class="approach-content bg-dark-glass p-4 rounded-4">
+                                <h3 class="h5 fw-bold mb-3">Deployment & Integration</h3>
+                                <p class="text-white-50 mb-0">We implement the solution with careful planning to minimize disruption, ensure smooth integration with your existing systems, and provide comprehensive training for your team.</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Approach Step 6 -->
+                        <div class="approach-step">
+                            <div class="approach-number bg-primary">06</div>
+                            <div class="approach-content bg-dark-glass p-4 rounded-4">
+                                <h3 class="h5 fw-bold mb-3">Ongoing Support & Evolution</h3>
+                                <p class="text-white-50 mb-0">Our commitment extends beyond the initial deployment. We provide ongoing support, maintenance, and continuous improvement to ensure your solution evolves with your business needs and technological advancements.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Industries We Serve -->
+    <section class="py-5 mb-5 bg-dark-deep">
+        <div class="container px-4">
+            <div class="row justify-content-center text-center mb-5">
+                <div class="col-lg-8">
+                    <h2 class="fw-bold mb-3">Industries We <span class="text-gradient">Serve</span></h2>
+                    <p class="lead text-white-50">Our expertise spans across diverse sectors, delivering tailored technology solutions for specific industry challenges.</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <!-- Industry 1 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="industry-card text-center bg-dark-glass p-4 rounded-4 h-100">
+                        <div class="industry-icon mb-3">
+                            <i class="fas fa-industry fa-3x text-primary"></i>
+                        </div>
+                        <h3 class="h5 fw-bold mb-3">Manufacturing</h3>
+                        <p class="text-white-50 mb-0">Smart factories, predictive maintenance, quality control, and supply chain optimization solutions that increase efficiency and reduce costs.</p>
+                    </div>
+                </div>
+                
+                <!-- Industry 2 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="industry-card text-center bg-dark-glass p-4 rounded-4 h-100">
+                        <div class="industry-icon mb-3">
+                            <i class="fas fa-hospital fa-3x text-success"></i>
+                        </div>
+                        <h3 class="h5 fw-bold mb-3">Healthcare</h3>
+                        <p class="text-white-50 mb-0">Remote patient monitoring, diagnostic tools, healthcare data analytics, and medical device integration for improved patient care.</p>
+                    </div>
+                </div>
+                
+                <!-- Industry 3 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="industry-card text-center bg-dark-glass p-4 rounded-4 h-100">
+                        <div class="industry-icon mb-3">
+                            <i class="fas fa-landmark fa-3x text-info"></i>
+                        </div>
+                        <h3 class="h5 fw-bold mb-3">Finance</h3>
+                        <p class="text-white-50 mb-0">Trading platforms, fraud detection systems, risk management tools, and blockchain solutions for secure and efficient financial operations.</p>
+                    </div>
+                </div>
+                
+                <!-- Industry 4 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="industry-card text-center bg-dark-glass p-4 rounded-4 h-100">
+                        <div class="industry-icon mb-3">
+                            <i class="fas fa-city fa-3x text-warning"></i>
+                        </div>
+                        <h3 class="h5 fw-bold mb-3">Smart Cities</h3>
+                        <p class="text-white-50 mb-0">Traffic management, public safety, environmental monitoring, and infrastructure optimization for more sustainable urban environments.</p>
+                    </div>
+                </div>
+                
+                <!-- Industry 5 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="industry-card text-center bg-dark-glass p-4 rounded-4 h-100">
+                        <div class="industry-icon mb-3">
+                            <i class="fas fa-shipping-fast fa-3x text-danger"></i>
+                        </div>
+                        <h3 class="h5 fw-bold mb-3">Logistics</h3>
+                        <p class="text-white-50 mb-0">Fleet management, route optimization, warehouse automation, and supply chain visibility solutions for streamlined logistics operations.</p>
+                    </div>
+                </div>
+                
+                <!-- Industry 6 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="industry-card text-center bg-dark-glass p-4 rounded-4 h-100">
+                        <div class="industry-icon mb-3">
+                            <i class="fas fa-leaf fa-3x text-success"></i>
+                        </div>
+                        <h3 class="h5 fw-bold mb-3">Agriculture</h3>
+                        <p class="text-white-50 mb-0">Precision farming, crop monitoring, automated irrigation, and environmental analysis for optimized agricultural production.</p>
+                    </div>
+                </div>
+                
+                <!-- Industry 7 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="industry-card text-center bg-dark-glass p-4 rounded-4 h-100">
+                        <div class="industry-icon mb-3">
+                            <i class="fas fa-shopping-cart fa-3x text-primary"></i>
+                        </div>
+                        <h3 class="h5 fw-bold mb-3">Retail</h3>
+                        <p class="text-white-50 mb-0">Customer analytics, inventory management, personalized shopping experiences, and omnichannel retail solutions.</p>
+                    </div>
+                </div>
+                
+                <!-- Industry 8 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="industry-card text-center bg-dark-glass p-4 rounded-4 h-100">
+                        <div class="industry-icon mb-3">
+                            <i class="fas fa-bolt fa-3x text-warning"></i>
+                        </div>
+                        <h3 class="h5 fw-bold mb-3">Energy</h3>
+                        <p class="text-white-50 mb-0">Smart grid solutions, energy management systems, renewable energy integration, and predictive maintenance for power systems.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-5 py-lg-6 bg-primary bg-gradient text-white position-relative">
+        <div class="container px-4">
+            <div class="row justify-content-center text-center">
+                <div class="col-lg-8">
+                    <h2 class="fw-bold mb-4">Ready to Start Your Next Project?</h2>
+                    <p class="lead mb-4">Let's discuss how our expertise can help bring your technology vision to reality.</p>
+                    <div class="d-flex flex-wrap justify-content-center gap-3">
+                        <a href="contact.html" class="btn btn-light btn-lg px-5 py-3">Contact Us</a>
+                        <a href="services.html" class="btn btn-outline-light btn-lg px-5 py-3">Explore Services</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cta-shapes"></div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-5 bg-dark border-top border-dark">
+        <div class="container px-4">
+            <div class="row gy-4">
+                <div class="col-lg-4 col-md-6">
+                    <a class="d-inline-flex align-items-center mb-3" href="index.html">
+                        <img src="img/logo.png" alt="KRISH TECH Logo" height="30" class="me-2">
+                        <span class="fw-bold text-gradient">KRISH TECH</span>
+                    </a>
+                    <p class="text-white-50 mb-4">Pioneering tomorrow's technology solutions to solve today's business challenges.</p>
+                    <div class="social-links">
+                        <a href="#" class="me-2 btn btn-sm btn-dark-glass"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="me-2 btn btn-sm btn-dark-glass"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="me-2 btn btn-sm btn-dark-glass"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="btn btn-sm btn-dark-glass"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="text-white mb-3">Quick Links</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="text-white mb-3">Services</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="services.html#software">Software Development</a></li>
+                        <li><a href="services.html#iot">IoT Systems</a></li>
+                        <li><a href="services.html#ai-ml">AI & Machine Learning</a></li>
+                        <li><a href="services.html#embedded">Embedded Solutions</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <h5 class="text-white mb-3">Stay Updated</h5>
+                    <p class="text-white-50 mb-3">Subscribe to our newsletter for the latest tech insights and company news.</p>
+                    <form class="mb-3">
+                        <div class="input-group">
+                            <input type="email" class="form-control bg-dark-subtle border-0" placeholder="Your email address" aria-label="Your email address">
+                            <button class="btn btn-primary" type="submit">Subscribe</button>
+                        </div>
+                    </form>
+                    <p class="text-white-50 small">© 2025 KRISH TECH. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Project Modal 1 -->
+    <div class="modal fade" id="project1Modal" tabindex="-1" aria-labelledby="project1ModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content bg-dark-glass border-0">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title" id="project1ModalLabel">Predictive Maintenance System</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row g-4">
+                        <!-- <div class="col-lg-6">
+                            <img src="img/project-1-detail.jpg" alt="Project Detail" class="img-fluid rounded-3 mb-3">
+                            <div class="row g-2">
+                                <div class="col-4">
+                                    <img src="img/project-1-detail-1.jpg" alt="Project Detail" class="img-fluid rounded-3">
+                                </div>
+                                <div class="col-4">
+                                    <img src="img/project-1-detail-2.jpg" alt="Project Detail" class="img-fluid rounded-3">
+                                </div>
+                                <div class="col-4">
+                                    <img src="img/project-1-detail-3.jpg" alt="Project Detail" class="img-fluid rounded-3">
+                                </div>
+                            </div>
+                        </div> -->
+                        <div class="col-lg-6">
+                            <h3 class="h4 fw-bold mb-3">Predictive Maintenance System for Manufacturing</h3>
+                            <p class="mb-4 text-white-50">We developed an AI-powered predictive maintenance system for a global manufacturing client that revolutionized their maintenance operations. The system continuously monitors equipment performance using IoT sensors, analyzes data using machine learning models, and predicts potential failures before they occur.</p>
+                            
+                            <h4 class="h6 fw-bold text-primary mb-2">Challenge</h4>
+                            <p class="mb-3 text-white-50">The client was experiencing significant production losses due to unexpected equipment failures, with reactive maintenance resulting in extended downtime and increased costs.</p>
+                            
+                            <h4 class="h6 fw-bold text-primary mb-2">Solution</h4>
+                            <ul class="text-white-50 mb-3">
+                                <li>Deployed a network of IoT sensors to monitor equipment vibration, temperature, and other critical parameters</li>
+                                <li>Developed machine learning models trained on historical failure data to identify patterns preceding equipment failure</li>
+                                <li>Created a real-time dashboard for maintenance teams to visualize equipment health and prioritize interventions</li>
+                                <li>Implemented automated alerts and maintenance scheduling system</li>
+                            </ul>
+                            
+                            <h4 class="h6 fw-bold text-primary mb-2">Results</h4>
+                            <ul class="text-white-50 mb-4">
+                                <li>42% reduction in unplanned equipment downtime</li>
+                                <li>$2.7M annual savings in maintenance costs</li>
+                                <li>35% increase in equipment lifespan</li>
+                                <li>8-month return on investment</li>
+                            </ul>
+                            
+                            <h4 class="h6 fw-bold text-primary mb-2">Technologies Used</h4>
+                            <div class="tech-stack mb-4">
+                                <span class="badge bg-dark-subtle text-white-50 me-1 mb-1">TensorFlow</span>
+                                <span class="badge bg-dark-subtle text-white-50 me-1 mb-1">Python</span>
+                                <span class="badge bg-dark-subtle text-white-50 me-1 mb-1">IoT Sensors</span>
+                                <span class="badge bg-dark-subtle text-white-50 me-1 mb-1">Time Series Analysis</span>
+                                <span class="badge bg-dark-subtle text-white-50 me-1 mb-1">Azure IoT Hub</span>
+                                <span class="badge bg-dark-subtle text-white-50 me-1 mb-1">React</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer border-0">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <a href="contact.html" class="btn btn-primary">Discuss a Similar Project</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Additional Project Modals (2-9) would be implemented similarly -->
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="btn btn-primary rounded-circle back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Bootstrap 5 JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+    <script src="js/portfolio.js"></script>
+
+</body>
+</html>

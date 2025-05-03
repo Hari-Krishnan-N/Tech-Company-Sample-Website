@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KRISH TECH - FAQ</title>
+    <!-- Bootstrap 5 CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/styles.css" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark-glass fixed-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="img/logo.png" alt="KRISH TECH Logo" height="30" class="me-2">
+                <span class="fw-bold text-gradient">KRISH TECH</span>
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarMain">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                </ul>
+                <div class="ms-lg-3">
+                    <a href="login.html" class="btn btn-outline-primary btn-sm btn-glow-sm">Sign In</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header bg-dark-gradient py-5 mb-5">
+        <div class="container px-4 py-5">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb mb-3">
+                            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">FAQ</li>
+                        </ol>
+                    </nav>
+                    <h1 class="fw-bold mb-3">Frequently Asked <span class="text-gradient">Questions</span></h1>
+                    <p class="lead mb-0 text-white-50">Find answers to common questions about our services, processes, and technologies.</p>
+                </div>
+                <div class="col-lg-6 d-none d-lg-block">
+                    <img src="img/faq.png" alt="FAQ illustration" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- FAQ Search & Filter Section -->
+    <section class="py-3 mb-4 bg-dark sticky-top faq-filter" style="top: 70px; z-index: 99;">
+        <div class="container px-4">
+            <div class="row">
+                <div class="col-12">
+                    <div class="d-flex flex-wrap justify-content-between align-items-center">
+                        <div class="faq-categories mb-3 mb-md-0">
+                            <div class="btn-group" role="group" aria-label="FAQ Categories">
+                                <button type="button" class="btn btn-dark-glass active" data-filter="all">All</button>
+                                <button type="button" class="btn btn-dark-glass" data-filter="general">General</button>
+                                <button type="button" class="btn btn-dark-glass" data-filter="services">Services</button>
+                                <button type="button" class="btn btn-dark-glass" data-filter="technical">Technical</button>
+                                <button type="button" class="btn btn-dark-glass" data-filter="billing">Billing</button>
+                            </div>
+                        </div>
+                        <div class="faq-search">
+                            <div class="input-group">
+                                <input type="text" class="form-control bg-dark-subtle border-0" id="faqSearch" placeholder="Search questions..." aria-label="Search questions">
+                                <button class="btn btn-primary" type="button">
+                                    <i class="fas fa-search"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Question Jump Links -->
+    <section class="mb-4">
+        <div class="container px-4">
+            <div class="row">
+                <div class="col-12">
+                    <div class="question-links bg-dark-glass p-4 rounded-4">
+                        <h2 class="h5 fw-bold mb-3">Quick Navigation</h2>
+                        <div class="row g-3">
+                            <div class="col-md-6 col-lg-3">
+                                <h3 class="h6 fw-bold text-primary mb-2">General</h3>
+                                <ul class="list-unstyled mb-0">
+                                    <li class="mb-2"><a href="#q1" class="quick-link"><i class="fas fa-angle-right me-1"></i> What is KRISH TECH?</a></li>
+                                    <li class="mb-2"><a href="#q2" class="quick-link"><i class="fas fa-angle-right me-1"></i> How long has KRISH TECH been in business?</a></li>
+                                    <li class="mb-2"><a href="#q3" class="quick-link"><i class="fas fa-angle-right me-1"></i> Where is KRISH TECH located?</a></li>
+                                    <li><a href="#q4" class="quick-link"><i class="fas fa-angle-right me-1"></i> What industries do you serve?</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6 col-lg-3">
+                                <h3 class="h6 fw-bold text-success mb-2">Services</h3>
+                                <ul class="list-unstyled mb-0">
+                                    <li class="mb-2"><a href="#q5" class="quick-link"><i class="fas fa-angle-right me-1"></i> What services does KRISH TECH offer?</a></li>
+                                    <li class="mb-2"><a href="#q6" class="quick-link"><i class="fas fa-angle-right me-1"></i> Do you provide custom solutions?</a></li>
+                                    <li class="mb-2"><a href="#q7" class="quick-link"><i class="fas fa-angle-right me-1"></i> What is your development process?</a></li>
+                                    <li><a href="#q8" class="quick-link"><i class="fas fa-angle-right me-1"></i> Do you provide ongoing support?</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6 col-lg-3">
+                                <h3 class="h6 fw-bold text-info mb-2">Technical</h3>
+                                <ul class="list-unstyled mb-0">
+                                    <li class="mb-2"><a href="#q9" class="quick-link"><i class="fas fa-angle-right me-1"></i> What technologies do you work with?</a></li>
+                                    <li class="mb-2"><a href="#q10" class="quick-link"><i class="fas fa-angle-right me-1"></i> How do you ensure security?</a></li>
+                                    <li class="mb-2"><a href="#q11" class="quick-link"><i class="fas fa-angle-right me-1"></i> Can you integrate with existing systems?</a></li>
+                                    <li><a href="#q12" class="quick-link"><i class="fas fa-angle-right me-1"></i> Do you provide technical documentation?</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6 col-lg-3">
+                                <h3 class="h6 fw-bold text-warning mb-2">Billing & Projects</h3>
+                                <ul class="list-unstyled mb-0">
+                                    <li class="mb-2"><a href="#q13" class="quick-link"><i class="fas fa-angle-right me-1"></i> How do you structure pricing?</a></li>
+                                    <li class="mb-2"><a href="#q14" class="quick-link"><i class="fas fa-angle-right me-1"></i> What are typical project timelines?</a></li>
+                                    <li class="mb-2"><a href="#q15" class="quick-link"><i class="fas fa-angle-right me-1"></i> Do you offer fixed price projects?</a></li>
+                                    <li><a href="#q16" class="quick-link"><i class="fas fa-angle-right me-1"></i> What payment methods do you accept?</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- General Questions Section -->
+    <section class="py-5 mb-5" id="general-questions">
+        <div class="container px-4">
+            <div class="row mb-4">
+                <div class="col-12">
+                    <div class="section-header d-flex align-items-center">
+                        <div class="section-icon me-3">
+                            <i class="fas fa-info-circle fa-2x text-primary"></i>
+                        </div>
+                        <div>
+                            <h2 class="fw-bold mb-0">General <span class="text-gradient">Questions</span></h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="accordion faq-accordion" id="generalAccordion">
+                        <!-- Question 1 -->
+                        <div class="accordion-item bg-dark-glass mb-3 border-0 faq-item" data-category="general" id="q1">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button bg-dark-glass" type="button" data-bs-toggle="collapse" data-bs-target="#generalCollapse1" aria-expanded="true" aria-controls="generalCollapse1">
+                                    What is KRISH TECH?
+                                </button>
+                            </h3>
+                            <div id="generalCollapse1" class="accordion-collapse collapse show" data-bs-parent="#generalAccordion">
+                                <div class="accordion-body text-white-50">
+                                    <p>KRISH TECH is a technology solutions company that specializes in software development, IoT systems, AI/ML integration, and embedded solutions. We help businesses across various industries transform their operations and drive innovation through custom technology solutions tailored to their specific needs. Our team of experts combines technical expertise with industry knowledge to deliver high-quality, scalable solutions that solve complex business challenges.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Question 2 -->
+                        <div class="accordion-item bg-dark-glass mb-3 border-0 faq-item" data-category="general" id="q2">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button bg-dark-glass collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#generalCollapse2" aria-expanded="false" aria-controls="generalCollapse2">
+                                    How long has KRISH TECH been in business?
+                                </button>
+                            </h3>
+                            <div id="generalCollapse2" class="accordion-collapse collapse" data-bs-parent="#generalAccordion">
+                                <div class="accordion-body text-white-50">
+                                    <p>KRISH TECH was founded in 2015 and has been operating for 10 years. Over the past decade, we've grown from a small software consultancy to a full-service technology solutions provider with expertise across multiple domains. During this time, we've successfully delivered hundreds of projects for clients ranging from startups to Fortune 500 companies, building a reputation for technical excellence, innovation, and client satisfaction.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Question 3 -->
+                        <div class="accordion-item bg-dark-glass mb-3 border-0 faq-item" data-category="general" id="q3">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button bg-dark-glass collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#generalCollapse3" aria-expanded="false" aria-controls="generalCollapse3">
+                                    Where is KRISH TECH located?
+                                </button>
+                            </h3>
+                            <div id="generalCollapse3" class="accordion-collapse collapse" data-bs-parent="#generalAccordion">
+                                <div class="accordion-body text-white-50">
+                                    <p>Our headquarters is located in Silicon Valley, California, with additional offices in Boston, London, and Singapore. We also have a distributed team of professionals working remotely across various time zones, allowing us to provide 24/7 service and support to our global client base. Despite our geographical distribution, we maintain a cohesive company culture and collaborative work environment through robust communication tools and regular team meetings.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Question 4 -->
+                        <div class="accordion-item bg-dark-glass mb-3 border-0 faq-item" data-category="general" id="q4">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button bg-dark-glass collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#generalCollapse4" aria-expanded="false" aria-controls="generalCollapse4">
+                                    What industries do you serve?
+                                </button>
+                            </h3>
+                            <div id="generalCollapse4" class="accordion-collapse collapse" data-bs-parent="#generalAccordion">
+                                <div class="accordion-body text-white-50">
+                                    <p>We serve a diverse range of industries, including:</p>
+                                    <ul>
+                                        <li>Manufacturing and Industrial Automation</li>
+                                        <li>Healthcare and Medical Devices</li>
+                                        <li>Financial Services and FinTech</li>
+                                        <li>Smart Cities and Urban Infrastructure</li>
+                                        <li>Retail and E-commerce</li>
+                                        <li>Logistics and Supply Chain</li>
+                                        <li>Agriculture and AgriTech</li>
+                                        <li>Energy and Utilities</li>
+                                    </ul>
+                                    <p>Our team has domain expertise in these industries, allowing us to understand the specific challenges and requirements of each sector and develop solutions that address their unique needs.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Questions Section -->
+    <section class="py-5 mb-5 bg-dark-deep" id="services-questions">
+        <div class="container px-4">
+            <div class="row mb-4">
+                <div class="col-12">
+                    <div class="section-header d-flex align-items-center">
+                        <div class="section-icon me-3">
+                            <i class="fas fa-cogs fa-2x text-success"></i>
+                        </div>
+                        <div>
+                            <h2 class="fw-bold mb-0">Services <span class="text-gradient">Questions</span></h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="accordion faq-accordion" id="servicesAccordion">
+                        <!-- Question 5 -->
+                        <div class="accordion-item bg-dark-glass mb-3 border-0 faq-item" data-category="services" id="q5">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button bg-dark-glass" type="button" data-bs-toggle="collapse" data-bs-target="#servicesCollapse1" aria-expanded="true" aria-controls="servicesCollapse1">
+                                    What services does KRISH TECH offer?
+                                </button>
+                            </h3>
+                            <div id="servicesCollapse1" class="accordion-collapse collapse show" data-bs-parent="#servicesAccordion">
+                                <div class="accordion-body text-white-50">
+                                    <p>KRISH TECH offers a comprehensive range of technology services, including:</p>
+                                    <ul>
+                                        <li><strong>Software Development:</strong> Custom software solutions, web applications, mobile apps, enterprise systems, cloud solutions, and API development.</li>
+                                        <li><strong>IoT Systems:</strong> Connected device ecosystems, sensor networks, industrial IoT, smart buildings, and IoT platform development.</li>
+                                        <li><strong>AI & Machine Learning:</strong> Predictive analytics, computer vision, natural language processing, recommendation systems, and custom AI applications.</li>
+                                        <li><strong>Embedded Solutions:</strong> Firmware development, real-time systems, hardware-software integration, and low-power embedded designs.</li>
+                                    </ul>
+                                    <p>We also provide consulting, system integration, and ongoing support services to ensure the long-term success of our solutions.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Question 6 -->
+                        <div class="accordion-item bg-dark-glass mb-3 border-0 faq-item" data-category="services" id="q6">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button bg-dark-glass collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#servicesCollapse2" aria-expanded="false" aria-controls="servicesCollapse2">
+                                    Do you provide custom solutions or only pre-built options?
+                                </button>
+                            </h3>
+                            <div id="servicesCollapse2" class="accordion-collapse collapse" data-bs-parent="#servicesAccordion">
+                                <div class="accordion-body text-white-50">
+                                    <p>We specialize in developing custom solutions tailored to each client's specific needs and business challenges. While we leverage existing frameworks, libraries, and components to accelerate development and ensure quality, our solutions are designed and built specifically for each client's unique requirements rather than offering pre-packaged products.</p>
+                                    <p>Our approach involves a thorough understanding of your business objectives, challenges, and workflow before designing a solution that aligns with your goals. This ensures the technology we deliver provides maximum value and integrates seamlessly with your existing systems and processes.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Question 7 -->
+                        <div class="accordion-item bg-dark-glass mb-3 border-0 faq-item" data-category="services" id="q7">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button bg-dark-glass collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#servicesCollapse3" aria-expanded="false" aria-controls="servicesCollapse3">
+                                    What is your development process?
+                                </button>
+                            </h3>
+                            <div id="servicesCollapse3" class="accordion-collapse collapse" data-bs-parent="#servicesAccordion">
+                                <div class="accordion-body text-white-50">
+                                    <p>Our development process follows an agile methodology with six key phases:</p>
+                                    <ol>
+                                        <li><strong>Discovery & Analysis:</strong> Understanding your business requirements, challenges, and objectives through stakeholder interviews and research.</li>
+                                        <li><strong>Strategy & Planning:</strong> Creating a detailed solution design, architecture, and project roadmap with clear milestones and deliverables.</li>
+                                        <li><strong>Development:</strong> Building your solution with iterative sprints, regular demos, and continuous feedback to ensure alignment with expectations.</li>
+                                        <li><strong>Testing & QA:</strong> Rigorous quality assurance including unit testing, integration testing, system testing, and user acceptance testing.</li>
+                                        <li><strong>Deployment:</strong> Carefully planned implementation with migration strategies, training, and go-live support.</li>
+                                        <li><strong>Support & Maintenance:</strong> Ongoing monitoring, updates, and improvements to ensure optimal performance and address evolving needs.</li>
+                                    </ol>
+                                    <p>Throughout this process, we maintain transparent communication with regular progress updates and collaborative decision-making.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Question 8 -->
+                        <div class="accordion-item bg-dark-glass mb-3 border-0 faq-item" data-category="services" id="q8">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button bg-dark-glass collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#servicesCollapse4" aria-expanded="false" aria-controls="servicesCollapse4">
+                                    Do you provide ongoing support and maintenance after project completion?
+                                </button>
+                            </h3>
+                            <div id="servicesCollapse4" class="accordion-collapse collapse" data-bs-parent="#servicesAccordion">
+                                <div class="accordion-body text-white-50">
+                                    <p>Yes, we offer comprehensive support and maintenance services for all our solutions. Our support offerings include:</p>
+                                    <ul>
+                                        <li><strong>Technical Support:</strong> Assistance with technical issues, bug fixes, and troubleshooting.</li>
+                                        <li><strong>Monitoring & Maintenance:</strong> Proactive system monitoring, performance optimization, and regular updates.</li>
+                                        <li><strong>Feature Enhancements:</strong> Ongoing development of new features and capabilities to meet evolving needs.</li>
+                                        <li><strong>Security Updates:</strong> Regular security patches and vulnerability assessments.</li>
+                                    </ul>
+                                    <p>We offer different tiers of support packages tailored to your specific needs, from basic maintenance to comprehensive managed services with 24/7 support. Our goal is to ensure your solution continues to deliver value and perform optimally throughout its lifecycle.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Questions Section -->
+    <section class="py-5 mb-5" id="technical-questions">
+        <div class="container px-4">
+            <div class="row mb-4">
+                <div class="col-12">
+                    <div class="section-header d-flex align-items-center">
+                        <div class="section-icon me-3">
+                            <i class="fas fa-code fa-2x text-info"></i>
+                        </div>
+                        <div>
+                            <h2 class="fw-bold mb-0">Technical <span class="text-gradient">Questions</span></h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="accordion faq-accordion" id="technicalAccordion">
+                        <!-- Question 9 -->
+                        <div class="accordion-item bg-dark-glass mb-3 border-0 faq-item" data-category="technical" id="q9">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button bg-dark-glass" type="button" data-bs-toggle="collapse" data-bs-target="#technicalCollapse1" aria-expanded="true" aria-controls="technicalCollapse1">
+                                    What technologies and platforms do you work with?
+                                </button>
+                            </h3>
+                            <div id="technicalCollapse1" class="accordion-collapse collapse show" data-bs-parent="#technicalAccordion">
+                                <div class="accordion-body text-white-50">
+                                    <p>We work with a wide range of technologies across different domains:</p>
+                                    <ul>
+                                        <li><strong>Frontend:</strong> React, Angular, Vue.js, TypeScript, Bootstrap, Tailwind CSS</li>
+                                        <li><strong>Backend:</strong> Node.js, Python, Java, .NET, PHP, Go</li>
+                                        <li><strong>Mobile:</strong> React Native, Flutter, iOS (Swift), Android (Kotlin)</li>
+                                        <li><strong>Databases:</strong> PostgreSQL, MySQL, MongoDB, Redis, Elasticsearch</li>
+                                        <li><strong>Cloud:</strong> AWS, Azure, Google Cloud, Kubernetes, Docker</li>
+                                        <li><strong>IoT:</strong> MQTT, CoAP, LoRaWAN, Azure IoT, AWS IoT</li>
+                                        <li><strong>AI/ML:</strong> TensorFlow, PyTorch, scikit-learn, OpenCV, NLP frameworks</li>
+                                        <li><strong>Embedded:</strong> C/C++, Embedded Linux, RTOS, Arduino, Raspberry Pi</li>
+                                    </ul>
+                                    <p>Our technology stack is continuously evolving as we adopt new tools and frameworks that enhance our ability to deliver high-quality solutions. We select the most appropriate technologies for each project based on specific requirements, performance considerations, and long-term maintainability.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Question 10 -->
+                        <div class="accordion-item bg-dark-glass mb-3 border-0 faq-item" data-category="technical" id="q10">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button bg-dark-glass collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#technicalCollapse2" aria-expanded="false" aria-controls="technicalCollapse2">
+                                    How do you ensure the security of your solutions?
+                                </button>
+                            </h3>
+                            <div id="technicalCollapse2" class="accordion-collapse collapse" data-bs-parent="#technicalAccordion">
+                                <div class="accordion-body text-white-50">
+                                    <p>Security is built into every aspect of our development process. Our comprehensive security approach includes:</p>
+                                    <ul>
+                                        <li><strong>Secure Design:</strong> Following security-by-design principles and conducting threat modeling early in the development process.</li>
+                                        <li><strong>Secure Coding Practices:</strong> Adhering to industry best practices and frameworks such as OWASP for web applications.</li>
+                                        <li><strong>Regular Security Testing:</strong> Performing static code analysis, dynamic application security testing, and penetration testing.</li>
+                                        <li><strong>Data Protection:</strong> Implementing encryption for data at rest and in transit, secure access controls, and data minimization principles.</li>
+                                        <li><strong>Authentication & Authorization:</strong> Using industry-standard authentication protocols and implementing proper role-based access control.</li>
+                                        <li><strong>Vulnerability Management:</strong> Regular security updates, dependency scanning, and prompt remediation of identified vulnerabilities.</li>
+                                        <li><strong>Compliance:</strong> Ensuring solutions meet relevant regulatory requirements such as GDPR, HIPAA, or industry-specific standards.</li>
+                                    </ul>
+                                    <p>We also conduct regular security training for our team and stay updated on emerging threats and best practices to continuously enhance our security posture.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Question 11 -->
+                        <div class="accordion-item bg-dark-glass mb-3 border-0 faq-item" data-category="technical" id="q11">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button bg-dark-glass collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#technicalCollapse3" aria-expanded="false" aria-controls="technicalCollapse3">
+                                    Can you integrate with our existing systems and infrastructure?
+                                </button>
+                            </h3>
+                            <div id="technicalCollapse3" class="accordion-collapse collapse" data-bs-parent="#technicalAccordion">
+                                <div class="accordion-body text-white-50">
+                                    <p>Yes, we specialize in integrating new solutions with existing systems and infrastructure. Our integration capabilities include:</p>
+                                    <ul>
+                                        <li><strong>API Integration:</strong> Connecting with existing systems via RESTful APIs, GraphQL, SOAP, or custom integration protocols.</li>
+                                        <li><strong>Legacy System Integration:</strong> Building adapters and interfaces to connect modern applications with legacy systems.</li>
+                                        <li><strong>Database Integration:</strong> Synchronizing data between different database systems while maintaining data integrity.</li>
+                                        <li><strong>Enterprise Software Integration:</strong> Connecting with ERP, CRM, SCM, and other enterprise systems like SAP, Salesforce, etc.</li>
+                                        <li><strong>IoT Integration:</strong> Interfacing with existing sensors, devices, and IoT platforms.</li>
+                                        <li><strong>Cloud Integration:</strong> Facilitating hybrid and multi-cloud deployments that work seamlessly with on-premises infrastructure.</li>
+                                    </ul>
+                                    <p>Our integration approach begins with a thorough assessment of your existing systems, followed by designing a seamless integration strategy that minimizes disruption to your operations while ensuring data flows efficiently between systems.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Question 12 -->
+                        <div class="accordion-item bg-dark-glass mb-3 border-0 faq-item" data-category="technical" id="q12">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button bg-dark-glass collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#technicalCollapse4" aria-expanded="false" aria-controls="technicalCollapse4">
+                                    Do you provide technical documentation for your solutions?
+                                </button>
+                            </h3>
+                            <div id="technicalCollapse4" class="accordion-collapse collapse" data-bs-parent="#technicalAccordion">
+                                <div class="accordion-body text-white-50">
+                                    <p>Yes, comprehensive documentation is a standard part of our delivery process. Our documentation package typically includes:</p>
+                                    <ul>
+                                        <li><strong>Architecture Documentation:</strong> System architecture diagrams, component interactions, and technical specifications.</li>
+                                        <li><strong>API Documentation:</strong> Detailed documentation of APIs, endpoints, request/response formats, and authentication methods.</li>
+                                        <li><strong>User Manuals:</strong> Step-by-step guides for end-users, including screenshots and workflow explanations.</li>
+                                        <li><strong>Administrator Guides:</strong> Documentation for system administrators covering deployment, configuration, and maintenance procedures.</li>
+                                        <li><strong>Code Documentation:</strong> In-code comments and documentation following industry standards for the relevant technologies.</li>
+                                        <li><strong>Database Schemas:</strong> Entity-relationship diagrams and database schema documentation.</li>
+                                        <li><strong>Deployment Documentation:</strong> Infrastructure setup, deployment procedures, and environment configurations.</li>
+                                    </ul>
+                                    <p>We use modern documentation tools to ensure that documentation remains up-to-date and accessible. Additionally, we can customize documentation to meet your specific requirements and integrate it with your existing knowledge management systems.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Billing & Projects Questions Section -->
+    <section class="py-5 mb-5 bg-dark-deep" id="billing-questions">
+        <div class="container px-4">
+            <div class="row mb-4">
+                <div class="col-12">
+                    <div class="section-header d-flex align-items-center">
+                        <div class="section-icon me-3">
+                            <i class="fas fa-file-invoice-dollar fa-2x text-warning"></i>
+                        </div>
+                        <div>
+                            <h2 class="fw-bold mb-0">Billing & <span class="text-gradient">Projects</span></h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="accordion faq-accordion" id="billingAccordion">
+                        <!-- Question 13 -->
+                        <div class="accordion-item bg-dark-glass mb-3 border-0 faq-item" data-category="billing" id="q13">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button bg-dark-glass" type="button" data-bs-toggle="collapse" data-bs-target="#billingCollapse1" aria-expanded="true" aria-controls="billingCollapse1">
+                                    How do you structure your pricing?
+                                </button>
+                            </h3>
+                            <div id="billingCollapse1" class="accordion-collapse collapse show" data-bs-parent="#billingAccordion">
+                                <div class="accordion-body text-white-50">
+                                    <p>We offer flexible pricing models tailored to the nature and requirements of each project:</p>
+                                    <ul>
+                                        <li><strong>Fixed Price:</strong> A set price for projects with well-defined scope and requirements, providing budget certainty.</li>
+                                        <li><strong>Time & Materials:</strong> Billing based on actual time spent and resources used, ideal for projects with evolving requirements or ongoing development.</li>
+                                        <li><strong>Milestone-Based:</strong> Fixed payments tied to the completion of specific project milestones, combining budget predictability with flexibility.</li>
+                                        <li><strong>Retainer:</strong> Monthly allocation of hours or services for ongoing support, maintenance, and incremental enhancements.</li>
+                                        <li><strong>Hybrid Models:</strong> Customized pricing structures that combine elements of the above models to best fit your specific needs.</li>
+                                    </ul>
+                                    <p>Project costs are determined based on factors such as scope, complexity, timeline, required expertise, and resource requirements. We provide detailed estimates and transparent pricing with no hidden costs. For precise pricing, we recommend scheduling a consultation to discuss your specific project requirements.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Question 14 -->
+                        <div class="accordion-item bg-dark-glass mb-3 border-0 faq-item" data-category="billing" id="q14">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button bg-dark-glass collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#billingCollapse2" aria-expanded="false" aria-controls="billingCollapse2">
+                                    What are your typical project timelines?
+                                </button>
+                            </h3>
+                            <div id="billingCollapse2" class="accordion-collapse collapse" data-bs-parent="#billingAccordion">
+                                <div class="accordion-body text-white-50">
+                                    <p>Project timelines vary significantly based on scope, complexity, and requirements. Here are some general guidelines:</p>
+                                    <ul>
+                                        <li><strong>Small Projects:</strong> Simple web applications or basic IoT solutions typically take 2-3 months from concept to deployment.</li>
+                                        <li><strong>Medium Projects:</strong> More complex applications, enterprise software implementations, or multi-device IoT systems usually require 3-6 months.</li>
+                                        <li><strong>Large Projects:</strong> Complex enterprise systems, advanced AI solutions, or comprehensive IoT ecosystems generally take 6-12 months or more.</li>
+                                    </ul>
+                                    <p>Each project timeline includes phases for discovery, planning, development, testing, and deployment. We work with agile methodologies, delivering functional increments throughout the project rather than just at the end. This approach provides visibility into progress and allows for early feedback and adjustments.</p>
+                                    <p>During the discovery and planning phase, we'll provide a detailed project schedule with specific milestones and deliverables tailored to your project's unique requirements.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Question 15 -->
+                        <div class="accordion-item bg-dark-glass mb-3 border-0 faq-item" data-category="billing" id="q15">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button bg-dark-glass collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#billingCollapse3" aria-expanded="false" aria-controls="billingCollapse3">
+                                    Do you offer fixed price projects or only time and materials?
+                                </button>
+                            </h3>
+                            <div id="billingCollapse3" class="accordion-collapse collapse" data-bs-parent="#billingAccordion">
+                                <div class="accordion-body text-white-50">
+                                    <p>We offer both fixed price and time & materials pricing models, as well as hybrid approaches. The most suitable model depends on your project's nature and requirements:</p>
+                                    <ul>
+                                        <li><strong>Fixed Price:</strong> Best for projects with clearly defined scope, stable requirements, and predictable outcomes. This provides budget certainty but requires comprehensive upfront planning.</li>
+                                        <li><strong>Time & Materials:</strong> Ideal for projects with evolving requirements, those requiring an agile approach, or when the full scope cannot be defined in advance. This provides maximum flexibility but with less predictable total costs.</li>
+                                        <li><strong>Hybrid Approach:</strong> We can also structure projects with a fixed price for well-defined core functionality and time & materials for components that may evolve or require exploration.</li>
+                                    </ul>
+                                    <p>For any pricing model, we ensure transparency with detailed documentation of deliverables, clear communication about any changes that might affect scope or budget, and regular progress reporting. Our goal is to find the pricing structure that best aligns with your project needs and budget constraints.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Question 16 -->
+                        <div class="accordion-item bg-dark-glass mb-3 border-0 faq-item" data-category="billing" id="q16">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button bg-dark-glass collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#billingCollapse4" aria-expanded="false" aria-controls="billingCollapse4">
+                                    What payment methods do you accept?
+                                </button>
+                            </h3>
+                            <div id="billingCollapse4" class="accordion-collapse collapse" data-bs-parent="#billingAccordion">
+                                <div class="accordion-body text-white-50">
+                                    <p>We accept a variety of payment methods to accommodate different client preferences:</p>
+                                    <ul>
+                                        <li><strong>Bank Transfers:</strong> Direct bank transfers (ACH, wire transfers) for domestic and international payments.</li>
+                                        <li><strong>Credit Cards:</strong> Major credit cards including Visa, Mastercard, and American Express.</li>
+                                        <li><strong>Digital Payments:</strong> PayPal and other digital payment platforms.</li>
+                                        <li><strong>Checks:</strong> For clients who prefer traditional payment methods.</li>
+                                    </ul>
+                                    <p>For fixed price projects, we typically structure payments in milestones: an initial deposit to commence work, followed by payments tied to the completion of specific project phases. For time & materials projects, we generally invoice on a monthly basis with detailed time reports.</p>
+                                    <p>Payment terms and schedules are clearly outlined in our contracts and can be customized to align with your organization's procurement processes and payment cycles. We also offer enterprise billing options for larger clients with specific invoicing requirements.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Not Found Your Answer Section -->
+    <section class="py-5 mb-5">
+        <div class="container px-4">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h2 class="fw-bold mb-4">Didn't Find Your <span class="text-gradient">Answer?</span></h2>
+                    <p class="lead text-white-50 mb-5">We're here to help! Reach out to our team with any questions or inquiries.</p>
+                    <div class="d-flex flex-wrap justify-content-center gap-3">
+                        <a href="contact.html" class="btn btn-primary btn-lg">
+                            <i class="fas fa-envelope me-2"></i> Contact Us
+                        </a>
+                        <button class="btn btn-outline-primary btn-lg" data-bs-toggle="modal" data-bs-target="#questionModal">
+                            <i class="fas fa-question-circle me-2"></i> Ask a Question
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-5 py-lg-6 bg-primary bg-gradient text-white position-relative">
+        <div class="container px-4">
+            <div class="row justify-content-center text-center">
+                <div class="col-lg-8">
+                    <h2 class="fw-bold mb-4">Ready to Transform Your Business?</h2>
+                    <p class="lead mb-4">Let's collaborate to build innovative solutions that drive your business forward.</p>
+                    <a href="contact.html" class="btn btn-light btn-lg px-5 py-3">Get Started Today</a>
+                </div>
+            </div>
+        </div>
+        <div class="cta-shapes"></div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-5 bg-dark border-top border-dark">
+        <div class="container px-4">
+            <div class="row gy-4">
+                <div class="col-lg-4 col-md-6">
+                    <a class="d-inline-flex align-items-center mb-3" href="index.html">
+                        <img src="img/logo.png" alt="KRISH TECH Logo" height="30" class="me-2">
+                        <span class="fw-bold text-gradient">KRISH TECH</span>
+                    </a>
+                    <p class="text-white-50 mb-4">Pioneering tomorrow's technology solutions to solve today's business challenges.</p>
+                    <div class="social-links">
+                        <a href="#" class="me-2 btn btn-sm btn-dark-glass"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="me-2 btn btn-sm btn-dark-glass"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="me-2 btn btn-sm btn-dark-glass"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="btn btn-sm btn-dark-glass"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="text-white mb-3">Quick Links</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="text-white mb-3">Services</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="services.html#software">Software Development</a></li>
+                        <li><a href="services.html#iot">IoT Systems</a></li>
+                        <li><a href="services.html#ai-ml">AI & Machine Learning</a></li>
+                        <li><a href="services.html#embedded">Embedded Solutions</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <h5 class="text-white mb-3">Stay Updated</h5>
+                    <p class="text-white-50 mb-3">Subscribe to our newsletter for the latest tech insights and company news.</p>
+                    <form class="mb-3">
+                        <div class="input-group">
+                            <input type="email" class="form-control bg-dark-subtle border-0" placeholder="Your email address" aria-label="Your email address">
+                            <button class="btn btn-primary" type="submit">Subscribe</button>
+                        </div>
+                    </form>
+                    <p class="text-white-50 small">© 2025 KRISH TECH. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Ask Question Modal -->
+    <div class="modal fade" id="questionModal" tabindex="-1" aria-labelledby="questionModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content bg-dark-glass border-0">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title" id="questionModalLabel">Ask a Question</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="questionForm">
+                        <!-- Name Field -->
+                        <div class="mb-3">
+                            <div class="form-floating">
+                                <input type="text" class="form-control bg-dark-subtle border-0" id="questionName" placeholder="Your Name" required>
+                                <label for="questionName">Your Name</label>
+                            </div>
+                        </div>
+                        
+                        <!-- Email Field -->
+                        <div class="mb-3">
+                            <div class="form-floating">
+                                <input type="email" class="form-control bg-dark-subtle border-0" id="questionEmail" placeholder="Your Email" required>
+                                <label for="questionEmail">Your Email</label>
+                            </div>
+                        </div>
+                        
+                        <!-- Question Category -->
+                        <div class="mb-3">
+                            <div class="form-floating">
+                                <select class="form-select bg-dark-subtle border-0" id="questionCategory" required>
+                                    <option value="" selected disabled>Select a category</option>
+                                    <option value="general">General</option>
+                                    <option value="services">Services</option>
+                                    <option value="technical">Technical</option>
+                                    <option value="billing">Billing & Projects</option>
+                                    <option value="other">Other</option>
+                                </select>
+                                <label for="questionCategory">Question Category</label>
+                            </div>
+                        </div>
+                        
+                        <!-- Question Text -->
+                        <div class="mb-3">
+                            <div class="form-floating">
+                                <textarea class="form-control bg-dark-subtle border-0" id="questionText" placeholder="Your Question" style="height: 120px" required></textarea>
+                                <label for="questionText">Your Question</label>
+                            </div>
+                        </div>
+                        
+                        <!-- Submit Button -->
+                        <button type="submit" class="btn btn-primary w-100">
+                            Submit Question
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="btn btn-primary rounded-circle back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Bootstrap 5 JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+    <script src="js/faq.js"></script>
+
+</body>
+</html>

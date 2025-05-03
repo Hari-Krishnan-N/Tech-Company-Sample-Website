@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KRISH TECH - Contact</title>
+    <!-- Bootstrap 5 CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/styles.css" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark-glass fixed-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="img/logo.png" alt="KRISH TECH Logo" height="30" class="me-2">
+                <span class="fw-bold text-gradient">KRISH TECH</span>
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarMain">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                </ul>
+                <div class="ms-lg-3">
+                    <a href="login.html" class="btn btn-outline-primary btn-sm btn-glow-sm">Sign In</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header bg-dark-gradient py-5 mb-5">
+        <div class="container px-4 py-5">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb mb-3">
+                            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Contact</li>
+                        </ol>
+                    </nav>
+                    <h1 class="fw-bold mb-3">Get in <span class="text-gradient">Touch</span></h1>
+                    <p class="lead mb-0 text-white-50">Have a project in mind? Let's discuss how we can help bring your ideas to life.</p>
+                </div>
+                <div class="col-lg-6 d-none d-lg-block">
+                    <img src="img/contact.png" alt="Contact illustration" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Contact Section -->
+    <section class="py-5 mb-5">
+        <div class="container px-4">
+            <div class="row g-5">
+                <!-- Contact Form Column -->
+                <div class="col-lg-7">
+                    <div class="contact-form-wrapper bg-dark-glass p-4 p-md-5 rounded-4">
+                        <h2 class="h3 fw-bold mb-4">Send Us a Message</h2>
+                        <form id="contactForm" class="needs-validation" novalidate>
+                            <!-- Name Field -->
+                            <div class="mb-4">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control bg-dark-subtle border-0" id="nameInput" placeholder="Your Name" required>
+                                    <label for="nameInput">Your Name</label>
+                                    <div class="invalid-feedback">Please enter your name.</div>
+                                </div>
+                            </div>
+                            
+                            <!-- Email Field -->
+                            <div class="mb-4">
+                                <div class="form-floating">
+                                    <input type="email" class="form-control bg-dark-subtle border-0" id="emailInput" placeholder="name@example.com" required>
+                                    <label for="emailInput">Email Address</label>
+                                    <div class="invalid-feedback">Please enter a valid email address.</div>
+                                </div>
+                            </div>
+                            
+                            <!-- Phone Field -->
+                            <div class="mb-4">
+                                <div class="form-floating">
+                                    <input type="tel" class="form-control bg-dark-subtle border-0" id="phoneInput" placeholder="Phone Number">
+                                    <label for="phoneInput">Phone Number (Optional)</label>
+                                </div>
+                            </div>
+                            
+                            <!-- Subject Field -->
+                            <div class="mb-4">
+                                <div class="form-floating">
+                                    <select class="form-select bg-dark-subtle border-0" id="subjectSelect" required>
+                                        <option value="" selected disabled>Select subject</option>
+                                        <option value="general">General Inquiry</option>
+                                        <option value="project">Project Discussion</option>
+                                        <option value="support">Technical Support</option>
+                                        <option value="partnership">Partnership Opportunity</option>
+                                        <option value="career">Career Information</option>
+                                    </select>
+                                    <label for="subjectSelect">Subject</label>
+                                    <div class="invalid-feedback">Please select a subject.</div>
+                                </div>
+                            </div>
+                            
+                            <!-- Message Field -->
+                            <div class="mb-4">
+                                <div class="form-floating">
+                                    <textarea class="form-control bg-dark-subtle border-0" id="messageTextarea" placeholder="Your Message" style="height: 160px" required></textarea>
+                                    <label for="messageTextarea">Your Message</label>
+                                    <div class="invalid-feedback">Please enter your message.</div>
+                                </div>
+                            </div>
+                            
+                            <!-- Consent Checkbox -->
+                            <div class="mb-4">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="consentCheck" required>
+                                    <label class="form-check-label" for="consentCheck">
+                                        I agree to the <a href="#" data-bs-toggle="modal" data-bs-target="#privacyModal">privacy policy</a> and consent to being contacted regarding my inquiry.
+                                    </label>
+                                    <div class="invalid-feedback">You must agree before submitting.</div>
+                                </div>
+                            </div>
+                            
+                            <!-- Submit Button -->
+                            <button type="submit" class="btn btn-primary btn-lg btn-glow">
+                                <span>Send Message</span>
+                                <i class="fas fa-paper-plane ms-2"></i>
+                            </button>
+                            
+                            <!-- Form Status Messages -->
+                            <div class="mt-4 d-none" id="formStatus">
+                                <div class="alert alert-success d-none" id="formSuccess">
+                                    <i class="fas fa-check-circle me-2"></i> Your message has been sent successfully. We'll get back to you soon!
+                                </div>
+                                <div class="alert alert-danger d-none" id="formError">
+                                    <i class="fas fa-exclamation-circle me-2"></i> There was an error sending your message. Please try again later.
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                
+                <!-- Contact Info Column -->
+                <div class="col-lg-5">
+                    <!-- Contact Information -->
+                    <div class="contact-info bg-dark-glass p-4 p-md-5 rounded-4 mb-4">
+                        <h2 class="h3 fw-bold mb-4">Contact Information</h2>
+                        <div class="contact-details">
+                            <div class="contact-item d-flex mb-4">
+                                <div class="icon-box me-3">
+                                    <i class="fas fa-map-marker-alt text-primary"></i>
+                                </div>
+                                <div class="contact-text">
+                                    <h5 class="h6 mb-1">Location</h5>
+                                    <p class="mb-0 text-white-50">1234 Tech Boulevard, Suite 500<br>Silicon Valley, CA 94088</p>
+                                </div>
+                            </div>
+                            <div class="contact-item d-flex mb-4">
+                                <div class="icon-box me-3">
+                                    <i class="fas fa-envelope text-primary"></i>
+                                </div>
+                                <div class="contact-text">
+                                    <h5 class="h6 mb-1">Email</h5>
+                                    <p class="mb-0 text-white-50">info@krishtech.com</p>
+                                </div>
+                            </div>
+                            <div class="contact-item d-flex mb-4">
+                                <div class="icon-box me-3">
+                                    <i class="fas fa-phone-alt text-primary"></i>
+                                </div>
+                                <div class="contact-text">
+                                    <h5 class="h6 mb-1">Phone</h5>
+                                    <p class="mb-0 text-white-50">+1 (555) 123-4567</p>
+                                </div>
+                            </div>
+                            <div class="contact-item d-flex">
+                                <div class="icon-box me-3">
+                                    <i class="fas fa-clock text-primary"></i>
+                                </div>
+                                <div class="contact-text">
+                                    <h5 class="h6 mb-1">Business Hours</h5>
+                                    <p class="mb-0 text-white-50">Monday - Friday: 9:00 AM - 6:00 PM<br>Saturday - Sunday: Closed</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="social-links mt-4">
+                            <h5 class="h6 mb-3">Connect With Us</h5>
+                            <div class="d-flex">
+                                <a href="#" class="btn btn-sm btn-dark-glass me-2"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="#" class="btn btn-sm btn-dark-glass me-2"><i class="fab fa-twitter"></i></a>
+                                <a href="#" class="btn btn-sm btn-dark-glass me-2"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#" class="btn btn-sm btn-dark-glass"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Map Embed -->
+                    <div class="map-wrapper bg-dark-glass p-4 p-md-5 rounded-4">
+                        <h2 class="h3 fw-bold mb-4">Our Location</h2>
+                        <div class="map-responsive rounded-3 overflow-hidden">
+                            <!-- Replace with actual Google Maps embed code -->
+                            <iframe src="about:blank" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="w-100"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-5 mb-5 bg-dark-deep">
+        <div class="container px-4">
+            <div class="row justify-content-center text-center mb-5">
+                <div class="col-lg-8">
+                    <h2 class="fw-bold mb-3">Frequently Asked <span class="text-gradient">Questions</span></h2>
+                    <p class="lead text-white-50">Find answers to common questions about our services and process.</p>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="accordion" id="contactFaqAccordion">
+                        <!-- FAQ Item 1 -->
+                        <div class="accordion-item bg-dark-glass border-0 mb-3">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button bg-dark-glass collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqOne" aria-expanded="false" aria-controls="faqOne">
+                                    What is the typical process for starting a new project?
+                                </button>
+                            </h3>
+                            <div id="faqOne" class="accordion-collapse collapse" data-bs-parent="#contactFaqAccordion">
+                                <div class="accordion-body text-white-50">
+                                    Our project process begins with an initial consultation to understand your requirements and goals. We then provide a proposal outlining scope, timeline, and costs. Once approved, we begin the discovery phase with detailed requirements gathering, followed by design, development, testing, and deployment. Throughout the process, we maintain transparent communication and regular progress updates.
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- FAQ Item 2 -->
+                        <div class="accordion-item bg-dark-glass border-0 mb-3">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button bg-dark-glass collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqTwo" aria-expanded="false" aria-controls="faqTwo">
+                                    How do you handle project pricing and payment terms?
+                                </button>
+                            </h3>
+                            <div id="faqTwo" class="accordion-collapse collapse" data-bs-parent="#contactFaqAccordion">
+                                <div class="accordion-body text-white-50">
+                                    We offer flexible pricing models depending on project size and requirements. For defined-scope projects, we typically use a fixed-price model with payments tied to milestones. For ongoing development or projects with evolving requirements, we often use a time-and-materials model. We require an initial deposit to begin work, with subsequent payments throughout the project lifecycle. All pricing and payment terms are clearly outlined in our proposals and contracts.
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- FAQ Item 3 -->
+                        <div class="accordion-item bg-dark-glass border-0 mb-3">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button bg-dark-glass collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqThree" aria-expanded="false" aria-controls="faqThree">
+                                    What is your typical project timeline?
+                                </button>
+                            </h3>
+                            <div id="faqThree" class="accordion-collapse collapse" data-bs-parent="#contactFaqAccordion">
+                                <div class="accordion-body text-white-50">
+                                    Project timelines vary significantly based on scope, complexity, and requirements. Small to medium-sized web applications typically take 2-4 months from concept to launch. Enterprise software or complex IoT systems may take 6-12 months. AI/ML projects often require 3-6 months for initial deployment, with ongoing refinement. During our initial consultation, we'll provide a more accurate timeline tailored to your specific project needs and constraints.
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- FAQ Item 4 -->
+                        <div class="accordion-item bg-dark-glass border-0 mb-3">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button bg-dark-glass collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqFour" aria-expanded="false" aria-controls="faqFour">
+                                    Do you provide ongoing support and maintenance?
+                                </button>
+                            </h3>
+                            <div id="faqFour" class="accordion-collapse collapse" data-bs-parent="#contactFaqAccordion">
+                                <div class="accordion-body text-white-50">
+                                    Yes, we offer comprehensive support and maintenance services to ensure your solution continues to perform optimally after launch. We provide different tiers of support packages, from basic monitoring and bug fixes to full managed services with regular updates and enhancements. Our support team is available during business hours, with emergency support available 24/7 for critical issues on certain plans. We also offer training and documentation to help your team become self-sufficient.
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- FAQ Item 5 -->
+                        <div class="accordion-item bg-dark-glass border-0">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button bg-dark-glass collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqFive" aria-expanded="false" aria-controls="faqFive">
+                                    How do you handle intellectual property and confidentiality?
+                                </button>
+                            </h3>
+                            <div id="faqFive" class="accordion-collapse collapse" data-bs-parent="#contactFaqAccordion">
+                                <div class="accordion-body text-white-50">
+                                    We respect the confidentiality and intellectual property rights of our clients. For all projects, we sign comprehensive non-disclosure agreements (NDAs) before any detailed discussions. Unless explicitly agreed otherwise, all intellectual property developed during a project belongs to the client upon final payment. We maintain strict security protocols to protect your sensitive information and code. Our team members are all bound by confidentiality agreements as part of their employment contracts.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Support Channels -->
+    <section class="py-5 mb-5">
+        <div class="container px-4">
+            <div class="row justify-content-center text-center mb-5">
+                <div class="col-lg-8">
+                    <h2 class="fw-bold mb-3">Support <span class="text-gradient">Channels</span></h2>
+                    <p class="lead text-white-50">Multiple ways to get the assistance you need, when you need it.</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <!-- Support Channel 1 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="support-card h-100 bg-dark-glass p-4 rounded-4 text-center">
+                        <div class="icon-wrapper mb-3">
+                            <i class="fas fa-headset fa-3x text-primary"></i>
+                        </div>
+                        <h3 class="h5 mb-3">Technical Support</h3>
+                        <p class="text-white-50 mb-3">Get expert help with technical issues for your existing solutions.</p>
+                        <a href="#" class="btn btn-outline-primary btn-sm">Open Ticket</a>
+                    </div>
+                </div>
+                
+                <!-- Support Channel 2 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="support-card h-100 bg-dark-glass p-4 rounded-4 text-center">
+                        <div class="icon-wrapper mb-3">
+                            <i class="fas fa-comments fa-3x text-success"></i>
+                        </div>
+                        <h3 class="h5 mb-3">Live Chat</h3>
+                        <p class="text-white-50 mb-3">Connect with our team in real-time for immediate assistance.</p>
+                        <button class="btn btn-outline-success btn-sm">Start Chat</button>
+                    </div>
+                </div>
+                
+                <!-- Support Channel 3 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="support-card h-100 bg-dark-glass p-4 rounded-4 text-center">
+                        <div class="icon-wrapper mb-3">
+                            <i class="fas fa-book fa-3x text-info"></i>
+                        </div>
+                        <h3 class="h5 mb-3">Knowledge Base</h3>
+                        <p class="text-white-50 mb-3">Browse our comprehensive documentation and tutorials.</p>
+                        <a href="#" class="btn btn-outline-info btn-sm">View Articles</a>
+                    </div>
+                </div>
+                
+                <!-- Support Channel 4 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="support-card h-100 bg-dark-glass p-4 rounded-4 text-center">
+                        <div class="icon-wrapper mb-3">
+                            <i class="fas fa-calendar-alt fa-3x text-warning"></i>
+                        </div>
+                        <h3 class="h5 mb-3">Consultation</h3>
+                        <p class="text-white-50 mb-3">Schedule a call with our experts to discuss your project.</p>
+                        <a href="#" class="btn btn-outline-warning btn-sm">Book Appointment</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-5 py-lg-6 bg-primary bg-gradient text-white position-relative">
+        <div class="container px-4">
+            <div class="row justify-content-center text-center">
+                <div class="col-lg-8">
+                    <h2 class="fw-bold mb-4">Ready to Transform Your Business?</h2>
+                    <p class="lead mb-4">Let's collaborate to build innovative solutions that drive your business forward.</p>
+                    <button class="btn btn-light btn-lg px-5 py-3" data-bs-toggle="modal" data-bs-target="#quickContactModal">Quick Contact</button>
+                </div>
+            </div>
+        </div>
+        <div class="cta-shapes"></div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-5 bg-dark border-top border-dark">
+        <div class="container px-4">
+            <div class="row gy-4">
+                <div class="col-lg-4 col-md-6">
+                    <a class="d-inline-flex align-items-center mb-3" href="index.html">
+                        <img src="img/logo.png" alt="KRISH TECH Logo" height="30" class="me-2">
+                        <span class="fw-bold text-gradient">KRISH TECH</span>
+                    </a>
+                    <p class="text-white-50 mb-4">Pioneering tomorrow's technology solutions to solve today's business challenges.</p>
+                    <div class="social-links">
+                        <a href="#" class="me-2 btn btn-sm btn-dark-glass"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="me-2 btn btn-sm btn-dark-glass"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="me-2 btn btn-sm btn-dark-glass"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="btn btn-sm btn-dark-glass"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="text-white mb-3">Quick Links</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="text-white mb-3">Services</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="services.html#software">Software Development</a></li>
+                        <li><a href="services.html#iot">IoT Systems</a></li>
+                        <li><a href="services.html#ai-ml">AI & Machine Learning</a></li>
+                        <li><a href="services.html#embedded">Embedded Solutions</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <h5 class="text-white mb-3">Stay Updated</h5>
+                    <p class="text-white-50 mb-3">Subscribe to our newsletter for the latest tech insights and company news.</p>
+                    <form class="mb-3">
+                        <div class="input-group">
+                            <input type="email" class="form-control bg-dark-subtle border-0" placeholder="Your email address" aria-label="Your email address">
+                            <button class="btn btn-primary" type="submit">Subscribe</button>
+                        </div>
+                    </form>
+                    <p class="text-white-50 small">© 2025 KRISH TECH. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Privacy Policy Modal -->
+    <div class="modal fade" id="privacyModal" tabindex="-1" aria-labelledby="privacyModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content bg-dark-glass border-0">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title" id="privacyModalLabel">Privacy Policy</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h4 class="h5 mb-3">Information Collection and Use</h4>
+                    <p class="text-white-50">We collect personal information such as your name, email address, phone number, and company name when you submit our contact form. This information is used solely to respond to your inquiries, provide requested services, and maintain communication regarding your projects.</p>
+                    
+                    <h4 class="h5 mb-3 mt-4">Data Protection</h4>
+                    <p class="text-white-50">We implement appropriate security measures to protect your personal information against unauthorized access, alteration, disclosure, or destruction. Your data is stored securely and only accessed by authorized personnel who require it to perform their duties.</p>
+                    
+                    <h4 class="h5 mb-3 mt-4">Communication</h4>
+                    <p class="text-white-50">By providing your contact information and consent, you agree to receive communications from us regarding your inquiry, project updates, and relevant service information. You may opt out of non-essential communications at any time.</p>
+                    
+                    <h4 class="h5 mb-3 mt-4">Third-Party Disclosure</h4>
+                    <p class="text-white-50">We do not sell, trade, or transfer your personal information to third parties without your consent, except for trusted partners who assist us in operating our website, conducting business, or servicing you, provided they agree to keep this information confidential.</p>
+                </div>
+                <div class="modal-footer border-0">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Quick Contact Modal -->
+    <div class="modal fade" id="quickContactModal" tabindex="-1" aria-labelledby="quickContactModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content bg-dark-glass border-0">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title" id="quickContactModalLabel">Quick Contact</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="quickContactForm" class="needs-validation" novalidate>
+                        <!-- Name Field -->
+                        <div class="mb-3">
+                            <div class="form-floating">
+                                <input type="text" class="form-control bg-dark-subtle border-0" id="quickNameInput" placeholder="Your Name" required>
+                                <label for="quickNameInput">Your Name</label>
+                                <div class="invalid-feedback">Please enter your name.</div>
+                            </div>
+                        </div>
+                        
+                        <!-- Email Field -->
+                        <div class="mb-3">
+                            <div class="form-floating">
+                                <input type="email" class="form-control bg-dark-subtle border-0" id="quickEmailInput" placeholder="name@example.com" required>
+                                <label for="quickEmailInput">Email Address</label>
+                                <div class="invalid-feedback">Please enter a valid email address.</div>
+                            </div>
+                        </div>
+                        
+                        <!-- Message Field -->
+                        <div class="mb-3">
+                            <div class="form-floating">
+                                <textarea class="form-control bg-dark-subtle border-0" id="quickMessageTextarea" placeholder="Your Message" style="height: 120px" required></textarea>
+                                <label for="quickMessageTextarea">Brief Message</label>
+                                <div class="invalid-feedback">Please enter your message.</div>
+                            </div>
+                        </div>
+                        
+                        <!-- Submit Button -->
+                        <button type="submit" class="btn btn-primary w-100">
+                            Send <i class="fas fa-paper-plane ms-2"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Live Chat Widget -->
+    <div class="chat-widget">
+        <button class="chat-button btn btn-primary rounded-circle" id="chatToggle">
+            <i class="fas fa-comments"></i>
+        </button>
+        <div class="chat-popup bg-dark-glass" id="chatPopup">
+            <div class="chat-header d-flex justify-content-between align-items-center p-3 border-bottom border-dark">
+                <h5 class="mb-0">Live Support</h5>
+                <button class="btn-close btn-close-white" id="chatClose"></button>
+            </div>
+            <div class="chat-body p-3" id="chatBody">
+                <div class="chat-message bot-message mb-3">
+                    <div class="message-content bg-dark-subtle p-3 rounded-3">
+                        <p class="mb-0">Hello! 👋 How can we help you today?</p>
+                    </div>
+                    <span class="message-time small text-white-50">Just now</span>
+                </div>
+            </div>
+            <div class="chat-footer p-3 border-top border-dark">
+                <div class="input-group">
+                    <input type="text" class="form-control bg-dark-subtle border-0" placeholder="Type your message..." id="chatInput">
+                    <button class="btn btn-primary" id="chatSend">
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap 5 JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+    <script src="js/contact.js"></script>
+
+</body>
+</html>

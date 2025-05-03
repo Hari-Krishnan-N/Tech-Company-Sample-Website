@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KRISH TECH - Services</title>
+    <!-- Bootstrap 5 CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/styles.css" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark-glass fixed-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="img/logo.png" alt="KRISH TECH Logo" height="30" class="me-2">
+                <span class="fw-bold text-gradient">KRISH TECH</span>
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarMain">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                </ul>
+                <div class="ms-lg-3">
+                    <a href="login.html" class="btn btn-outline-primary btn-sm btn-glow-sm">Sign In</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header bg-dark-gradient py-5 mb-5">
+        <div class="container px-4 py-5">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb mb-3">
+                            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Services</li>
+                        </ol>
+                    </nav>
+                    <h1 class="fw-bold mb-3">Our <span class="text-gradient">Services</span></h1>
+                    <p class="lead mb-0 text-white-50">Explore our comprehensive range of technology solutions designed to transform your business.</p>
+                </div>
+                <div class="col-lg-6 d-none d-lg-block">
+                    <img src="img/service.png" alt="Services illustration" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Services Navigation -->
+    <section class="bg-dark py-4 mb-5 sticky-top services-nav" style="top: 70px; z-index: 99;">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-10">
+                    <div class="d-flex flex-wrap justify-content-between service-tabs">
+                        <a href="#software" class="service-tab active" data-target="software">
+                            <i class="fas fa-code me-2"></i> Software
+                        </a>
+                        <a href="#iot" class="service-tab" data-target="iot">
+                            <i class="fas fa-network-wired me-2"></i> IoT Systems
+                        </a>
+                        <a href="#ai-ml" class="service-tab" data-target="ai-ml">
+                            <i class="fas fa-brain me-2"></i> AI & ML
+                        </a>
+                        <a href="#embedded" class="service-tab" data-target="embedded">
+                            <i class="fas fa-microchip me-2"></i> Embedded
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Software Development Section -->
+    <section id="software" class="service-section py-5 mb-5">
+        <div class="container px-4">
+            <div class="row align-items-center mb-5">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <span class="badge bg-primary-subtle text-primary mb-2">Software Development</span>
+                    <h2 class="fw-bold mb-3">Custom Software <span class="text-gradient">Solutions</span></h2>
+                    <p class="lead mb-4">We craft bespoke software that streamlines your operations, enhances productivity, and creates exceptional user experiences.</p>
+                    <p class="mb-4 text-white-50">Our expert development team builds scalable, secure applications tailored to your specific business needs. From concept to deployment, we ensure your software solution delivers measurable value.</p>
+                    <div class="d-flex flex-wrap gap-2 mb-4">
+                        <span class="badge bg-dark-subtle">Web Applications</span>
+                        <span class="badge bg-dark-subtle">Mobile Development</span>
+                        <span class="badge bg-dark-subtle">Enterprise Solutions</span>
+                        <span class="badge bg-dark-subtle">Cloud Applications</span>
+                        <span class="badge bg-dark-subtle">API Development</span>
+                    </div>
+                    <a href="#" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#softwareModal">
+                        Learn More <i class="fas fa-arrow-right ms-2"></i>
+                    </a>
+                </div>
+                <div class="col-lg-6">
+                    <div class="service-card bg-dark-glass p-4 rounded-4">
+                        <div class="row g-4">
+                            <!-- Software Card 1 -->
+                            <div class="col-sm-6">
+                                <div class="card h-100 border-0 bg-transparent">
+                                    <div class="card-body">
+                                        <div class="icon-box mb-3 text-primary">
+                                            <i class="fas fa-laptop-code fa-2x"></i>
+                                        </div>
+                                        <h5 class="card-title">Web Applications</h5>
+                                        <p class="card-text text-white-50">Responsive, dynamic web apps that deliver exceptional user experiences across devices.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Software Card 2 -->
+                            <div class="col-sm-6">
+                                <div class="card h-100 border-0 bg-transparent">
+                                    <div class="card-body">
+                                        <div class="icon-box mb-3 text-primary">
+                                            <i class="fas fa-mobile-alt fa-2x"></i>
+                                        </div>
+                                        <h5 class="card-title">Mobile Applications</h5>
+                                        <p class="card-text text-white-50">Native and cross-platform apps that engage users and extend your digital reach.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Software Card 3 -->
+                            <div class="col-sm-6">
+                                <div class="card h-100 border-0 bg-transparent">
+                                    <div class="card-body">
+                                        <div class="icon-box mb-3 text-primary">
+                                            <i class="fas fa-database fa-2x"></i>
+                                        </div>
+                                        <h5 class="card-title">Database Solutions</h5>
+                                        <p class="card-text text-white-50">Optimized data structures and management systems for efficient information processing.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Software Card 4 -->
+                            <div class="col-sm-6">
+                                <div class="card h-100 border-0 bg-transparent">
+                                    <div class="card-body">
+                                        <div class="icon-box mb-3 text-primary">
+                                            <i class="fas fa-cloud fa-2x"></i>
+                                        </div>
+                                        <h5 class="card-title">Cloud Applications</h5>
+                                        <p class="card-text text-white-50">Scalable, resilient cloud solutions leveraging AWS, Azure, or Google Cloud.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- IoT Systems Section -->
+    <section id="iot" class="service-section py-5 mb-5 bg-dark-deep">
+        <div class="container px-4">
+            <div class="row align-items-center mb-5">
+                <div class="col-lg-6 order-lg-2 mb-4 mb-lg-0">
+                    <span class="badge bg-success-subtle text-success mb-2">IoT Systems</span>
+                    <h2 class="fw-bold mb-3">Connected <span class="text-gradient">Ecosystems</span></h2>
+                    <p class="lead mb-4">Transform your operations with intelligent, connected devices that communicate, collect data, and optimize processes.</p>
+                    <p class="mb-4 text-white-50">Our IoT solutions connect physical devices to digital systems, enabling real-time monitoring, analytics, and control. Whether it's smart buildings, industrial automation, or connected products, we deliver end-to-end IoT systems.</p>
+                    <div class="d-flex flex-wrap gap-2 mb-4">
+                        <span class="badge bg-dark-subtle">Sensor Networks</span>
+                        <span class="badge bg-dark-subtle">Smart Devices</span>
+                        <span class="badge bg-dark-subtle">Industrial IoT</span>
+                        <span class="badge bg-dark-subtle">Remote Monitoring</span>
+                        <span class="badge bg-dark-subtle">IoT Security</span>
+                    </div>
+                    <a href="#" class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#iotModal">
+                        Learn More <i class="fas fa-arrow-right ms-2"></i>
+                    </a>
+                </div>
+                <div class="col-lg-6 order-lg-1">
+                    <div class="service-card bg-dark-glass p-4 rounded-4">
+                        <div class="row g-4">
+                            <!-- IoT Card 1 -->
+                            <div class="col-sm-6">
+                                <div class="card h-100 border-0 bg-transparent">
+                                    <div class="card-body">
+                                        <div class="icon-box mb-3 text-success">
+                                            <i class="fas fa-broadcast-tower fa-2x"></i>
+                                        </div>
+                                        <h5 class="card-title">Sensor Networks</h5>
+                                        <p class="card-text text-white-50">Comprehensive networks of connected sensors for environmental and operational monitoring.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- IoT Card 2 -->
+                            <div class="col-sm-6">
+                                <div class="card h-100 border-0 bg-transparent">
+                                    <div class="card-body">
+                                        <div class="icon-box mb-3 text-success">
+                                            <i class="fas fa-industry fa-2x"></i>
+                                        </div>
+                                        <h5 class="card-title">Industrial IoT</h5>
+                                        <p class="card-text text-white-50">Connected systems for manufacturing, logistics, and industrial process optimization.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- IoT Card 3 -->
+                            <div class="col-sm-6">
+                                <div class="card h-100 border-0 bg-transparent">
+                                    <div class="card-body">
+                                        <div class="icon-box mb-3 text-success">
+                                            <i class="fas fa-building fa-2x"></i>
+                                        </div>
+                                        <h5 class="card-title">Smart Buildings</h5>
+                                        <p class="card-text text-white-50">Integrated systems for energy management, security, and occupant comfort.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- IoT Card 4 -->
+                            <div class="col-sm-6">
+                                <div class="card h-100 border-0 bg-transparent">
+                                    <div class="card-body">
+                                        <div class="icon-box mb-3 text-success">
+                                            <i class="fas fa-shield-alt fa-2x"></i>
+                                        </div>
+                                        <h5 class="card-title">IoT Security</h5>
+                                        <p class="card-text text-white-50">Comprehensive security solutions for protecting connected devices and data.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI & Machine Learning Section -->
+    <section id="ai-ml" class="service-section py-5 mb-5">
+        <div class="container px-4">
+            <div class="row align-items-center mb-5">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <span class="badge bg-info-subtle text-info mb-2">AI & Machine Learning</span>
+                    <h2 class="fw-bold mb-3">Intelligent <span class="text-gradient">Algorithms</span></h2>
+                    <p class="lead mb-4">Harness the power of artificial intelligence and machine learning to gain insights, automate processes, and make data-driven decisions.</p>
+                    <p class="mb-4 text-white-50">Our AI solutions transform raw data into actionable intelligence. From predictive analytics to computer vision, we build custom AI applications that solve complex business problems and create competitive advantages.</p>
+                    <div class="d-flex flex-wrap gap-2 mb-4">
+                        <span class="badge bg-dark-subtle">Predictive Analytics</span>
+                        <span class="badge bg-dark-subtle">Computer Vision</span>
+                        <span class="badge bg-dark-subtle">Natural Language Processing</span>
+                        <span class="badge bg-dark-subtle">Recommendation Systems</span>
+                        <span class="badge bg-dark-subtle">Anomaly Detection</span>
+                    </div>
+                    <a href="#" class="btn btn-info btn-sm" data-bs-toggle="modal" data-bs-target="#aimlModal">
+                        Learn More <i class="fas fa-arrow-right ms-2"></i>
+                    </a>
+                </div>
+                <div class="col-lg-6">
+                    <div class="service-card bg-dark-glass p-4 rounded-4">
+                        <div class="row g-4">
+                            <!-- AI/ML Card 1 -->
+                            <div class="col-sm-6">
+                                <div class="card h-100 border-0 bg-transparent">
+                                    <div class="card-body">
+                                        <div class="icon-box mb-3 text-info">
+                                            <i class="fas fa-chart-line fa-2x"></i>
+                                        </div>
+                                        <h5 class="card-title">Predictive Analytics</h5>
+                                        <p class="card-text text-white-50">Forecasting trends and behaviors with advanced statistical algorithms and machine learning.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- AI/ML Card 2 -->
+                            <div class="col-sm-6">
+                                <div class="card h-100 border-0 bg-transparent">
+                                    <div class="card-body">
+                                        <div class="icon-box mb-3 text-info">
+                                            <i class="fas fa-eye fa-2x"></i>
+                                        </div>
+                                        <h5 class="card-title">Computer Vision</h5>
+                                        <p class="card-text text-white-50">Image recognition, object detection, and visual data analysis for diverse applications.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- AI/ML Card 3 -->
+                            <div class="col-sm-6">
+                                <div class="card h-100 border-0 bg-transparent">
+                                    <div class="card-body">
+                                        <div class="icon-box mb-3 text-info">
+                                            <i class="fas fa-comment-dots fa-2x"></i>
+                                        </div>
+                                        <h5 class="card-title">Natural Language Processing</h5>
+                                        <p class="card-text text-white-50">Text analysis, sentiment analysis, and chatbots that understand and respond to human language.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- AI/ML Card 4 -->
+                            <div class="col-sm-6">
+                                <div class="card h-100 border-0 bg-transparent">
+                                    <div class="card-body">
+                                        <div class="icon-box mb-3 text-info">
+                                            <i class="fas fa-robot fa-2x"></i>
+                                        </div>
+                                        <h5 class="card-title">Intelligent Automation</h5>
+                                        <p class="card-text text-white-50">Smart process automation that learns and improves over time for optimal efficiency.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Embedded Solutions Section -->
+    <section id="embedded" class="service-section py-5 mb-5 bg-dark-deep">
+        <div class="container px-4">
+            <div class="row align-items-center mb-5">
+                <div class="col-lg-6 order-lg-2 mb-4 mb-lg-0">
+                    <span class="badge bg-warning-subtle text-warning mb-2">Embedded Solutions</span>
+                    <h2 class="fw-bold mb-3">Hardware-Software <span class="text-gradient">Integration</span></h2>
+                    <p class="lead mb-4">Specialized embedded systems that combine hardware and software for critical applications where reliability is paramount.</p>
+                    <p class="mb-4 text-white-50">Our embedded solutions power devices and systems that require real-time processing, low-level hardware control, and optimized performance. From industrial controllers to consumer electronics, we design and implement embedded systems that deliver exceptional reliability.</p>
+                    <div class="d-flex flex-wrap gap-2 mb-4">
+                        <span class="badge bg-dark-subtle">Firmware Development</span>
+                        <span class="badge bg-dark-subtle">Real-time Systems</span>
+                        <span class="badge bg-dark-subtle">Hardware Design</span>
+                        <span class="badge bg-dark-subtle">Low-power Solutions</span>
+                        <span class="badge bg-dark-subtle">Embedded Linux</span>
+                    </div>
+                    <a href="#" class="btn btn-warning btn-sm" data-bs-toggle="modal" data-bs-target="#embeddedModal">
+                        Learn More <i class="fas fa-arrow-right ms-2"></i>
+                    </a>
+                </div>
+                <div class="col-lg-6 order-lg-1">
+                    <div class="service-card bg-dark-glass p-4 rounded-4">
+                        <div class="row g-4">
+                            <!-- Embedded Card 1 -->
+                            <div class="col-sm-6">
+                                <div class="card h-100 border-0 bg-transparent">
+                                    <div class="card-body">
+                                        <div class="icon-box mb-3 text-warning">
+                                            <i class="fas fa-microchip fa-2x"></i>
+                                        </div>
+                                        <h5 class="card-title">Firmware Development</h5>
+                                        <p class="card-text text-white-50">Custom firmware for microcontrollers and embedded processors with strict resource constraints.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Embedded Card 2 -->
+                            <div class="col-sm-6">
+                                <div class="card h-100 border-0 bg-transparent">
+                                    <div class="card-body">
+                                        <div class="icon-box mb-3 text-warning">
+                                            <i class="fas fa-clock fa-2x"></i>
+                                        </div>
+                                        <h5 class="card-title">Real-time Systems</h5>
+                                        <p class="card-text text-white-50">Deterministic applications with guaranteed response times for critical operations.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Embedded Card 3 -->
+                            <div class="col-sm-6">
+                                <div class="card h-100 border-0 bg-transparent">
+                                    <div class="card-body">
+                                        <div class="icon-box mb-3 text-warning">
+                                            <i class="fas fa-cogs fa-2x"></i>
+                                        </div>
+                                        <h5 class="card-title">Hardware Integration</h5>
+                                        <p class="card-text text-white-50">Seamless integration of software with custom and off-the-shelf hardware components.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Embedded Card 4 -->
+                            <div class="col-sm-6">
+                                <div class="card h-100 border-0 bg-transparent">
+                                    <div class="card-body">
+                                        <div class="icon-box mb-3 text-warning">
+                                            <i class="fas fa-battery-half fa-2x"></i>
+                                        </div>
+                                        <h5 class="card-title">Low-power Solutions</h5>
+                                        <p class="card-text text-white-50">Energy-efficient embedded systems for battery-powered and eco-friendly applications.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Development Process -->
+    <section class="py-5 mb-5">
+        <div class="container px-4">
+            <div class="row justify-content-center text-center mb-5">
+                <div class="col-lg-8">
+                    <h2 class="fw-bold mb-3">Our Development <span class="text-gradient">Process</span></h2>
+                    <p class="lead text-white-50">A disciplined approach that ensures quality, transparency, and successful outcomes.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="process-timeline">
+                        <!-- Process Step 1 -->
+                        <div class="process-step">
+                            <div class="process-icon">
+                                <span class="process-number">1</span>
+                                <i class="fas fa-comments"></i>
+                            </div>
+                            <div class="process-content">
+                                <h4 class="fw-bold">Discovery & Analysis</h4>
+                                <p class="text-white-50">We begin by thoroughly understanding your business goals, requirements, and constraints. This phase involves stakeholder interviews, system analysis, and research to lay a solid foundation for the project.</p>
+                            </div>
+                        </div>
+                        <!-- Process Step 2 -->
+                        <div class="process-step">
+                            <div class="process-icon">
+                                <span class="process-number">2</span>
+                                <i class="fas fa-pencil-ruler"></i>
+                            </div>
+                            <div class="process-content">
+                                <h4 class="fw-bold">Design & Planning</h4>
+                                <p class="text-white-50">Our team creates detailed architectural designs, user interface mockups, and a comprehensive project plan. We establish technical specifications, define milestones, and outline the roadmap for development.</p>
+                            </div>
+                        </div>
+                        <!-- Process Step 3 -->
+                        <div class="process-step">
+                            <div class="process-icon">
+                                <span class="process-number">3</span>
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <div class="process-content">
+                                <h4 class="fw-bold">Development & Implementation</h4>
+                                <p class="text-white-50">Using agile methodologies, our engineers build your solution with regular sprints and iterative development. We maintain code quality through peer reviews, automated testing, and continuous integration.</p>
+                            </div>
+                        </div>
+                        <!-- Process Step 4 -->
+                        <div class="process-step">
+                            <div class="process-icon">
+                                <span class="process-number">4</span>
+                                <i class="fas fa-vial"></i>
+                            </div>
+                            <div class="process-content">
+                                <h4 class="fw-bold">Testing & Quality Assurance</h4>
+                                <p class="text-white-50">We perform rigorous testing, including unit tests, integration tests, system tests, and user acceptance testing. Our QA process ensures your solution is robust, secure, and error-free.</p>
+                            </div>
+                        </div>
+                        <!-- Process Step 5 -->
+                        <div class="process-step">
+                            <div class="process-icon">
+                                <span class="process-number">5</span>
+                                <i class="fas fa-rocket"></i>
+                            </div>
+                            <div class="process-content">
+                                <h4 class="fw-bold">Deployment & Launch</h4>
+                                <p class="text-white-50">We deploy your solution to production with careful planning to minimize disruption. Our deployment process includes migration strategies, rollback plans, and monitoring setup.</p>
+                            </div>
+                        </div>
+                        <!-- Process Step 6 -->
+                        <div class="process-step">
+                            <div class="process-icon">
+                                <span class="process-number">6</span>
+                                <i class="fas fa-headset"></i>
+                            </div>
+                            <div class="process-content">
+                                <h4 class="fw-bold">Support & Maintenance</h4>
+                                <p class="text-white-50">Our commitment extends beyond launch with comprehensive support and maintenance. We monitor performance, implement updates, and provide ongoing enhancements to keep your solution at peak effectiveness.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technologies Section -->
+    <section class="py-5 bg-dark-deep">
+        <div class="container px-4">
+            <div class="row justify-content-center text-center mb-5">
+                <div class="col-lg-8">
+                    <h2 class="fw-bold mb-3">Our <span class="text-gradient">Tech Stack</span></h2>
+                    <p class="lead text-white-50">We leverage cutting-edge technologies to deliver robust, scalable solutions.</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <!-- Tech Category 1 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="tech-category bg-dark-glass p-4 rounded-4 h-100">
+                        <h4 class="h5 text-primary mb-3"><i class="fas fa-laptop-code me-2"></i> Frontend</h4>
+                        <ul class="list-unstyled mb-0">
+                            <li class="mb-2"><i class="fab fa-react me-2"></i> React</li>
+                            <li class="mb-2"><i class="fab fa-angular me-2"></i> Angular</li>
+                            <li class="mb-2"><i class="fab fa-vuejs me-2"></i> Vue.js</li>
+                            <li class="mb-2"><i class="fab fa-bootstrap me-2"></i> Bootstrap</li>
+                            <li class="mb-2"><i class="fab fa-js me-2"></i> TypeScript</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Tech Category 2 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="tech-category bg-dark-glass p-4 rounded-4 h-100">
+                        <h4 class="h5 text-success mb-3"><i class="fas fa-server me-2"></i> Backend</h4>
+                        <ul class="list-unstyled mb-0">
+                            <li class="mb-2"><i class="fab fa-node-js me-2"></i> Node.js</li>
+                            <li class="mb-2"><i class="fab fa-python me-2"></i> Python/Django</li>
+                            <li class="mb-2"><i class="fab fa-java me-2"></i> Java/Spring</li>
+                            <li class="mb-2"><i class="fas fa-dot-circle me-2"></i> .NET Core</li>
+                            <li class="mb-2"><i class="fas fa-database me-2"></i> SQL/NoSQL</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Tech Category 3 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="tech-category bg-dark-glass p-4 rounded-4 h-100">
+                        <h4 class="h5 text-info mb-3"><i class="fas fa-brain me-2"></i> AI & Data</h4>
+                        <ul class="list-unstyled mb-0">
+                            <li class="mb-2"><i class="fab fa-python me-2"></i> TensorFlow</li>
+                            <li class="mb-2"><i class="fab fa-python me-2"></i> PyTorch</li>
+                            <li class="mb-2"><i class="fas fa-chart-bar me-2"></i> Pandas</li>
+                            <li class="mb-2"><i class="fas fa-robot me-2"></i> OpenAI</li>
+                            <li class="mb-2"><i class="fas fa-database me-2"></i> Apache Spark</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Tech Category 4 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="tech-category bg-dark-glass p-4 rounded-4 h-100">
+                        <h4 class="h5 text-warning mb-3"><i class="fas fa-microchip me-2"></i> Embedded</h4>
+                        <ul class="list-unstyled mb-0">
+                            <li class="mb-2"><i class="fas fa-memory me-2"></i> Arduino</li>
+                            <li class="mb-2"><i class="fas fa-tv me-2"></i> Raspberry Pi</li>
+                            <li class="mb-2"><i class="fas fa-code me-2"></i> C/C++</li>
+                            <li class="mb-2"><i class="fas fa-layer-group me-2"></i> RTOS</li>
+                            <li class="mb-2"><i class="fab fa-linux me-2"></i> Embedded Linux</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-5 py-lg-6 bg-primary bg-gradient text-white position-relative">
+        <div class="container px-4">
+            <div class="row justify-content-center text-center">
+                <div class="col-lg-8">
+                    <h2 class="fw-bold mb-4">Ready to Discuss Your Project?</h2>
+                    <p class="lead mb-4">Let's collaborate to build innovative solutions that drive your business forward.</p>
+                    <a href="contact.html" class="btn btn-light btn-lg px-5 py-3">Contact Our Team</a>
+                </div>
+            </div>
+        </div>
+        <div class="cta-shapes"></div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-5 bg-dark border-top border-dark">
+        <div class="container px-4">
+            <div class="row gy-4">
+                <div class="col-lg-4 col-md-6">
+                    <a class="d-inline-flex align-items-center mb-3" href="index.html">
+                        <img src="img/logo.png" alt="KRISH TECH Logo" height="30" class="me-2">
+                        <span class="fw-bold text-gradient">KRISH TECH</span>
+                    </a>
+                    <p class="text-white-50 mb-4">Pioneering tomorrow's technology solutions to solve today's business challenges.</p>
+                    <div class="social-links">
+                        <a href="#" class="me-2 btn btn-sm btn-dark-glass"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="me-2 btn btn-sm btn-dark-glass"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="me-2 btn btn-sm btn-dark-glass"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="btn btn-sm btn-dark-glass"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="text-white mb-3">Quick Links</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="text-white mb-3">Services</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="services.html#software">Software Development</a></li>
+                        <li><a href="services.html#iot">IoT Systems</a></li>
+                        <li><a href="services.html#ai-ml">AI & Machine Learning</a></li>
+                        <li><a href="services.html#embedded">Embedded Solutions</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <h5 class="text-white mb-3">Stay Updated</h5>
+                    <p class="text-white-50 mb-3">Subscribe to our newsletter for the latest tech insights and company news.</p>
+                    <form class="mb-3">
+                        <div class="input-group">
+                            <input type="email" class="form-control bg-dark-subtle border-0" placeholder="Your email address" aria-label="Your email address">
+                            <button class="btn btn-primary" type="submit">Subscribe</button>
+                        </div>
+                    </form>
+                    <p class="text-white-50 small">© 2025 KRISH TECH. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Service Modals -->
+    <!-- Software Modal -->
+    <div class="modal fade" id="softwareModal" tabindex="-1" aria-labelledby="softwareModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content bg-dark-glass border-0">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title" id="softwareModalLabel">Software Development Services</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-4 mb-4 mb-md-0">
+                            <img src="img/sd.png" alt="Software Development" class="img-fluid rounded-3 mb-3">
+                            <div class="d-flex flex-wrap gap-2">
+                                <span class="badge bg-dark-subtle">Web Apps</span>
+                                <span class="badge bg-dark-subtle">Mobile</span>
+                                <span class="badge bg-dark-subtle">Enterprise</span>
+                                <span class="badge bg-dark-subtle">Cloud</span>
+                                <span class="badge bg-dark-subtle">APIs</span>
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <h4 class="fw-bold mb-3">Custom Software Solutions</h4>
+                            <p class="mb-3">At KRISH TECH, we specialize in developing bespoke software applications that address your specific business challenges. Our development process emphasizes quality, scalability, and user experience.</p>
+                            
+                            <h5 class="h6 fw-bold text-primary mt-4 mb-2">Development Approach</h5>
+                            <p class="mb-3">We follow agile methodologies with iterative development cycles, ensuring frequent delivery of working software and the ability to adapt to changing requirements.</p>
+                            
+                            <h5 class="h6 fw-bold text-primary mt-4 mb-2">Quality Assurance</h5>
+                            <p class="mb-3">Our comprehensive testing strategy includes automated testing, performance testing, security testing, and user acceptance testing to ensure robust, secure, and high-performing solutions.</p>
+                            
+                            <h5 class="h6 fw-bold text-primary mt-4 mb-2">Technology Stack</h5>
+                            <p>We employ modern technology stacks tailored to your project needs, including React, Angular, Node.js, Python, Java, .NET, and various database technologies.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer border-0">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <a href="contact.html" class="btn btn-primary">Request a Consultation</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- IoT Modal -->
+    <div class="modal fade" id="iotModal" tabindex="-1" aria-labelledby="iotModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content bg-dark-glass border-0">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title" id="iotModalLabel">IoT Systems</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- IoT Modal Content -->
+                    <div class="row">
+                        <div class="col-md-4 mb-4 mb-md-0">
+                            <img src="img/iot2.png" alt="IoT Systems" class="img-fluid rounded-3 mb-3">
+                            <div class="d-flex flex-wrap gap-2">
+                                <span class="badge bg-dark-subtle">Sensor Networks</span>
+                                <span class="badge bg-dark-subtle">Industrial IoT</span>
+                                <span class="badge bg-dark-subtle">Smart Buildings</span>
+                                <span class="badge bg-dark-subtle">Monitoring</span>
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <h4 class="fw-bold mb-3">Connected IoT Ecosystems</h4>
+                            <p class="mb-3">KRISH TECH delivers end-to-end IoT solutions that connect physical devices to digital systems, enabling real-time monitoring, analytics, and control. Our IoT systems collect, process, and analyze data to drive operational efficiency and business insights.</p>
+                            
+                            <h5 class="h6 fw-bold text-success mt-4 mb-2">IoT Architecture</h5>
+                            <p class="mb-3">Our IoT architecture encompasses edge devices, gateways, cloud platforms, and applications, creating a seamless flow of data from the physical to the digital world.</p>
+                            
+                            <h5 class="h6 fw-bold text-success mt-4 mb-2">Security-First Approach</h5>
+                            <p class="mb-3">We implement comprehensive security measures at every layer of the IoT stack, protecting devices, communications, and data against vulnerabilities and threats.</p>
+                            
+                            <h5 class="h6 fw-bold text-success mt-4 mb-2">Scalable Solutions</h5>
+                            <p>Our IoT platforms scale from pilot projects to enterprise-wide deployments, supporting thousands of connected devices with reliable performance.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer border-0">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <a href="contact.html" class="btn btn-success">Request a Consultation</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- AI/ML Modal -->
+    <div class="modal fade" id="aimlModal" tabindex="-1" aria-labelledby="aimlModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content bg-dark-glass border-0">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title" id="aimlModalLabel">AI & Machine Learning</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- AI/ML Modal Content -->
+                    <div class="row">
+                        <div class="col-md-4 mb-4 mb-md-0">
+                            <img src="img/aiml.png" alt="AI & Machine Learning" class="img-fluid rounded-3 mb-3">
+                            <div class="d-flex flex-wrap gap-2">
+                                <span class="badge bg-dark-subtle">Predictive Analytics</span>
+                                <span class="badge bg-dark-subtle">Computer Vision</span>
+                                <span class="badge bg-dark-subtle">NLP</span>
+                                <span class="badge bg-dark-subtle">Deep Learning</span>
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <h4 class="fw-bold mb-3">Intelligent AI & ML Solutions</h4>
+                            <p class="mb-3">KRISH TECH harnesses the power of artificial intelligence and machine learning to transform raw data into actionable intelligence. Our AI solutions solve complex business problems and create competitive advantages through advanced algorithms and data processing.</p>
+                            
+                            <h5 class="h6 fw-bold text-info mt-4 mb-2">Data Science Expertise</h5>
+                            <p class="mb-3">Our data scientists and ML engineers build models that learn from historical data to predict future outcomes, identify patterns, and generate insights that drive decision-making.</p>
+                            
+                            <h5 class="h6 fw-bold text-info mt-4 mb-2">Custom AI Applications</h5>
+                            <p class="mb-3">We develop custom AI applications tailored to your specific industry and business challenges, from recommender systems to fraud detection to automated quality control.</p>
+                            
+                            <h5 class="h6 fw-bold text-info mt-4 mb-2">Ethical AI Development</h5>
+                            <p>Our AI solutions adhere to ethical principles, ensuring transparency, fairness, and accountability in all applications of artificial intelligence.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer border-0">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <a href="contact.html" class="btn btn-info">Request a Consultation</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Embedded Modal -->
+    <div class="modal fade" id="embeddedModal" tabindex="-1" aria-labelledby="embeddedModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content bg-dark-glass border-0">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title" id="embeddedModalLabel">Embedded Solutions</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- Embedded Modal Content -->
+                    <div class="row">
+                        <div class="col-md-4 mb-4 mb-md-0">
+                            <img src="img/emb.png" alt="Embedded Solutions" class="img-fluid rounded-3 mb-3">
+                            <div class="d-flex flex-wrap gap-2">
+                                <span class="badge bg-dark-subtle">Firmware</span>
+                                <span class="badge bg-dark-subtle">RTOS</span>
+                                <span class="badge bg-dark-subtle">Hardware Design</span>
+                                <span class="badge bg-dark-subtle">Low-power</span>
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <h4 class="fw-bold mb-3">Specialized Embedded Systems</h4>
+                            <p class="mb-3">KRISH TECH designs and implements embedded systems that combine hardware and software for critical applications where reliability, performance, and resource efficiency are paramount. Our embedded solutions power devices and systems across various industries.</p>
+                            
+                            <h5 class="h6 fw-bold text-warning mt-4 mb-2">Firmware Development</h5>
+                            <p class="mb-3">We develop optimized firmware for microcontrollers and embedded processors, ensuring efficient resource utilization and reliable operation even in constrained environments.</p>
+                            
+                            <h5 class="h6 fw-bold text-warning mt-4 mb-2">Real-time Systems</h5>
+                            <p class="mb-3">Our team creates deterministic real-time applications with guaranteed response times for critical operations in industrial control, automotive systems, and medical devices.</p>
+                            
+                            <h5 class="h6 fw-bold text-warning mt-4 mb-2">Hardware-Software Integration</h5>
+                            <p>We provide seamless integration of embedded software with custom and off-the-shelf hardware components, ensuring optimal performance and reliability.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer border-0">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <a href="contact.html" class="btn btn-warning">Request a Consultation</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap 5 JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+    <script src="js/services.js"></script>
+
+</body>
+</html>
